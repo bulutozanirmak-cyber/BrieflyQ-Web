@@ -1,32 +1,49 @@
-import Container from "@/app/_components/container";
-import { EXAMPLE_PATH } from "@/lib/constants";
+import Link from "next/link";
 
-export function Footer() {
+export default function Footer() {
   return (
-    <footer className="bg-neutral-50 border-t border-neutral-200 dark:bg-slate-800">
-      <Container>
-        <div className="py-28 flex flex-col lg:flex-row items-center">
-          <h3 className="text-4xl lg:text-[2.5rem] font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-            Statically Generated with Next.js.
-          </h3>
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
-            <a
-              href="https://nextjs.org/docs/app/building-your-application/routing/layouts-and-templates"
-              className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
-            >
-              Read Documentation
-            </a>
-            <a
-              href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-              className="mx-3 font-bold hover:underline"
-            >
-              View on GitHub
-            </a>
+    <footer className="border-t border-[#1A1F2C] bg-[#050608] py-14 text-xs text-[#7A8294]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        
+        {/* BQ Footer Brand */}
+        <div className="flex items-center gap-4">
+          <div className="flex flex-col items-center justify-center">
+            <div className="bg-black border border-[#D4AF37] px-2 py-0.5 shadow-sm">
+              <span className="gq-monogram text-xl text-white tracking-tighter uppercase inline-block">
+                B<span className="text-[#D4AF37]">Q</span>
+              </span>
+            </div>
+            <span className="text-[7px] font-sans font-bold uppercase tracking-[0.35em] text-[#8E95A5] mt-0.5 pl-[0.35em]">
+              brieflyq
+            </span>
+          </div>
+          <div className="border-l border-[#1F2533] pl-3">
+            <div className="text-white font-bold">BrieflyQ Private Intelligence</div>
+            <p className="text-[11px] text-[#606775]">
+              Covering the Delaware Court of Chancery, Wall Street M&A, and Federal Regulatory Agencies.
+            </p>
           </div>
         </div>
-      </Container>
+
+        {/* Footer Navigation */}
+        <div className="flex flex-wrap items-center gap-6 text-xs text-[#8E95A5] font-medium">
+          <Link href="#dockets" className="hover:text-white transition">
+            Chancery Dockets
+          </Link>
+          <Link href="#geo" className="hover:text-white transition">
+            GEO Protocol Standards
+          </Link>
+          <Link href="#ethics" className="hover:text-white transition">
+            Editorial Ethics
+          </Link>
+          <Link href="#access" className="hover:text-white transition">
+            Institutional Access
+          </Link>
+          <Link href="#privacy" className="hover:text-white transition">
+            Privacy Policy
+          </Link>
+        </div>
+      </div>
     </footer>
   );
 }
-
-export default Footer;

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrieflyQ | Private US Legal & Capital Intelligence</title>
+  
+  <!-- High Fashion Editorial Typography (GQ & FT Standard) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;0,6..96,900;1,6..96,700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#D4AF37',
+              bronze: '#C59B27',
+              dark: '#080A0E',
+              surface: '#0F1218',
+              card: '#141822',
+              cardBorder: '#1F2535',
+              textMain: '#F2F4F8',
+              textMuted: '#8E95A5'
+            }
+          },
+          fontFamily: {
+            gq: ['"Bodoni Moda"', 'Didot', 'Georgia', 'serif'],
+            serif: ['Newsreader', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+    .gq-monogram {
+      font-family: 'Bodoni Moda', serif;
+      font-weight: 900;
+      letter-spacing: -0.06em;
+      line-height: 0.9;
+    }
+    @keyframes ticker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .ticker-track {
+      display: inline-flex;
+      animation: ticker 45s linear infinite;
+    }
+    .ticker-track:hover {
+      animation-play-state: paused;
+    }
+    .geo-active .regular-body {
+      opacity: 0.25;
+      filter: blur(0.3px);
+      transition: all 0.3s ease;
+    }
+    .geo-active .bluf-memo {
+      border-color: #D4AF37 !important;
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(197, 155, 39, 0.05)) !important;
+      box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.25) !important;
+      transform: scale(1.008);
+    }
+  </style>
+</head>
+<body class="bg-[#080A0E] text-[#F2F4F8] min-h-screen font-sans antialiased transition-colors duration-300 selection:bg-[#D4AF37] selection:text-black">
+
+  <!-- TOP EDITORIAL INTELLIGENCE STRIP -->
+  <div class="border-b border-[#1A1F2C] bg-[#050608] py-2 px-4 text-xs select-none">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 text-xs font-bold text-[#D4AF37] tracking-wider uppercase">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#10B981]"></span> Live Ledger
+        </span>
+        <div class="overflow-hidden whitespace-nowrap max-w-xl sm:max-w-3xl">
+          <div class="ticker-track space-x-7 text-xs text-[#8E95A5]">
+            <span><strong class="text-[#F2F4F8] font-bold">S&P 500</strong> 5,864.67 <span class="text-[#10B981] font-semibold">+0.77%</span></span>
+            <span class="text-slate-700">/</span>
+            <span><strong class="text-[#F2F4F8] font-bold">NASDAQ 100</strong> 18,502.61 <span class="text-[#10B981] font-semibold">+1.12%</span></span>
+            <span class="text-slate-700">/</span>
+            <span><strong class="text-[#F2F4F8] font-bold">US 10Y YIELD</strong> 4.04% <span class="text-[#EF4444] font-semibold">-3 bps</span></span>
+            <span class="text-slate-700">/</span>
+            <span><strong class="text-[#D4AF37] font-bold">DELAWARE CHANCERY</strong> Apex Injunction Granted <span class="text-[#EF4444] font-semibold">DEAL FROZEN</span></span>
+            <span class="text-slate-700">/</span>
+            <span><strong class="text-[#F2F4F8] font-bold">SEC CORP FIN</strong> Digital Assets Rule 14a-8 <span class="text-[#D4AF37] font-semibold">ACTIONABLE</span></span>
+            <span class="text-slate-700">/</span>
+            <span><strong class="text-[#F2F4F8] font-bold">SOFR 30D</strong> 4.88% <span class="text-slate-400 font-semibold">UNQ</span></span>
+            <span class="text-slate-700">/</span>
+            <!-- Duplicate for infinite ticker -->
+            <span><strong class="text-[#F2F4F8] font-bold">S&P 500</strong> 5,864.67 <span class="text-[#10B981] font-semibold">+0.77%</span></span>
+            <span class="text-slate-700">/</span>
+            <span><strong class="text-[#F2F4F8] font-bold">NASDAQ 100</strong> 18,502.61 <span class="text-[#10B981] font-semibold">+1.12%</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center gap-4 text-xs text-[#7A8294] font-medium">
+        <span>New York • London Edition</span>
+        <span>October 13, 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MASTHEAD & NAVIGATION -->
+  <header class="border-b border-[#1A1F2C] bg-[#080A0E]/95 backdrop-blur-md sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-24">
+        
+        <!-- GQ-STYLE BQ MONOGRAM & LOGO -->
+        <div class="flex items-center space-x-6">
+          <a href="#" class="group flex items-center gap-4">
+            
+            <!-- THE BQ SYMBOL (BOLD, UPRIGHT, GQ STYLE) -->
+            <div class="flex flex-col items-center justify-center">
+              <div class="bg-black border-2 border-white dark:border-[#D4AF37] px-3 py-1 shadow-2xl group-hover:border-white transition duration-200">
+                <span class="gq-monogram text-3xl sm:text-4xl text-white tracking-tighter uppercase inline-block">
+                  B<span class="text-[#D4AF37] group-hover:text-white transition">Q</span>
+                </span>
+              </div>
+              <!-- brieflyq placed directly underneath -->
+              <span class="text-[9px] font-sans font-extrabold uppercase tracking-[0.42em] text-[#A0A7B5] group-hover:text-[#D4AF37] transition mt-1 pl-[0.42em]">
+                brieflyq
+              </span>
+            </div>
+
+            <!-- Divider & Tagline -->
+            <div class="hidden sm:block border-l border-[#232938] pl-5 py-1">
+              <div class="text-xs uppercase font-extrabold tracking-widest text-white leading-tight">
+                US Law & Capital Intelligence
+              </div>
+              <div class="text-[11px] text-[#7A8294] tracking-wider uppercase font-semibold mt-0.5">
+                For General Counsel, Boardrooms & Sovereign Funds
+              </div>
+            </div>
+
+          </a>
+        </div>
+
+        <!-- Editorial Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-8 text-xs font-bold uppercase tracking-wider text-[#9FA6B6]">
+          <a href="#docket" class="text-white hover:text-[#D4AF37] transition">Chancery & Dockets</a>
+          <a href="#capital" class="hover:text-[#D4AF37] transition">Private Credit & M&A</a>
+          <a href="#regulatory" class="hover:text-[#D4AF37] transition">SEC & Antitrust</a>
+          <a href="#sovereign" class="hover:text-[#D4AF37] transition">Sovereign Wealth</a>
+          <a href="#dossier" class="hover:text-[#D4AF37] transition flex items-center gap-1.5 text-[#D4AF37]">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span> Executive Dossiers
+          </a>
+        </nav>
+
+        <!-- Action Center -->
+        <div class="flex items-center space-x-3">
+          
+          <!-- GEO Mode Toggle -->
+          <button id="geoToggleBtn" onclick="toggleGeoMode()" class="flex items-center gap-2 px-3.5 py-2 rounded border border-[#D4AF37]/50 bg-[#D4AF37]/10 text-[#F2F4F8] hover:bg-[#D4AF37]/20 transition cursor-pointer text-xs font-bold tracking-wide shadow-sm">
+            <svg class="w-3.5 h-3.5 text-[#D4AF37]" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"/>
+            </svg>
+            <span id="geoBtnText">GEO Briefing: Off</span>
+          </button>
+
+          <!-- Theme Toggle Button -->
+          <button onclick="toggleTheme()" class="p-2 rounded border border-[#1F2533] text-[#7A8294] hover:text-white hover:bg-[#161B24] transition" title="Toggle Theme">
+            <svg id="themeIcon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </button>
+
+          <!-- Private Access CTA -->
+          <button class="hidden sm:inline-flex px-4 py-2 rounded bg-[#D4AF37] hover:bg-[#E5C158] text-slate-950 font-extrabold text-xs tracking-wider uppercase transition shadow-sm">
+            Partner Brief
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- EDITORIAL SUB-BAR -->
+  <div class="border-b border-[#1A1F2C] bg-[#0B0E14] py-2.5 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between text-xs text-[#8E95A5] gap-2">
+      <div class="flex items-center gap-2">
+        <span class="text-[#D4AF37] font-bold uppercase tracking-wider">Executive Intelligence Standard:</span>
+        <span>Every dispatch opens with an authoritative, LLM-distilled <strong>BLUF (Bottom Line Up Front)</strong> memorandum.</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-medium">
+        <span class="text-[#D4AF37]">Arbitrage Monitor: Active</span>
+        <span class="text-slate-600">|</span>
+        <span class="text-[#7A8294]">Citations: Verified by Chancery Dockets</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN EDITORIAL CONTENT -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="contentArea">
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-14">
+
+      <!-- PRIMARY INVESTIGATION -->
+      <article class="lg:col-span-8 bg-[#0F1218] border border-[#1E2536] rounded-lg p-7 sm:p-9 hover:border-[#2E374D] transition duration-300 relative group">
+        
+        <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
+          <span class="px-2.5 py-1 rounded bg-[#EF4444]/10 text-[#F87171] border border-[#EF4444]/20 font-bold uppercase tracking-wider">
+            Injunction Granted
+          </span>
+          <span class="text-[#D4AF37] font-semibold tracking-wide">Delaware Court of Chancery</span>
+          <span class="text-slate-600">•</span>
+          <span class="text-[#8E95A5]">Civil Action No. 2024-0982-KSJM</span>
+          <span class="text-slate-600">•</span>
+          <span class="text-[#8E95A5]">18 mins ago</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl lg:text-[42px] font-serif font-bold text-white tracking-tight leading-[1.18] mb-6 group-hover:text-[#FAF7F2] transition">
+          Chancellor McCormick Freezes $8.4B Apex Acquisition of CyberLogic, Establishing Novel Antitrust Monopsony Doctrine
+        </h1>
+
+        <!-- GEO BLUF MEMO -->
+        <div class="bluf-memo bg-[#141822] border-l-4 border-[#D4AF37] border-y border-r border-[#262E42] rounded-r-lg p-6 mb-7 shadow-lg transition-all duration-300">
+          <div class="flex items-center justify-between mb-3 border-b border-[#262E42] pb-2.5">
+            <div class="flex items-center gap-2 text-xs uppercase font-extrabold tracking-widest text-[#D4AF37]">
+              <span>Executive Briefing Memorandum (BLUF)</span>
+            </div>
+            <span class="text-xs text-[#8E95A5] font-semibold tracking-wide">Machine-Scraped Citation Tier 1</span>
+          </div>
+          
+          <p class="text-base sm:text-lg font-serif italic text-[#FAF7F2] leading-relaxed mb-4">
+            “The Delaware Chancery Court granted an emergency preliminary injunction blocking Apex Capital’s acquisition of CyberLogic. Ruling that consolidated compute contracts constitute an anti-competitive restraint under Clayton Act Section 7, the court froze closing procedures, instantly collapsing merger arbitrage spreads by 1,420 basis points across institutional arbitrage desks.”
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-3 border-t border-[#262E42] text-xs text-[#8E95A5]">
+            <div><span class="text-[#7A8294] block uppercase text-[11px] tracking-wider font-bold">TARGET ASSET</span> <strong class="text-white">CyberLogic (NASDAQ: CYBL)</strong></div>
+            <div><span class="text-[#7A8294] block uppercase text-[11px] tracking-wider font-bold">PREVALENT RISK</span> <strong class="text-[#EF4444]">$1.9B Deal Spread Risk</strong></div>
+            <div><span class="text-[#7A8294] block uppercase text-[11px] tracking-wider font-bold">PRESIDING JURIST</span> <strong class="text-white">McCormick, Chancellor</strong></div>
+          </div>
+        </div>
+
+        <div class="regular-body space-y-6 text-[#BAC1D2] text-base leading-relaxed">
+          <div class="border-l border-[#2B354D] pl-5">
+            <h3 class="font-serif font-bold text-white text-lg tracking-tight mb-1.5 text-[#EAD7BA]">
+              1. The Strategic Liability for Arbitrage Capital
+            </h3>
+            <p>Institutional desks holding multi-million spread exposures are recalibrating downside scenarios. The memorandum indicates that pre-scheduled break fees of $420M may become non-enforceable should the Clayton Act Section 7 claim prevail at the scheduled December 4 evidentiary hearing.</p>
+          </div>
+
+          <div class="border-l border-[#2B354D] pl-5">
+            <h3 class="font-serif font-bold text-white text-lg tracking-tight mb-1.5 text-[#EAD7BA]">
+              2. Precedent for Six Pending Technology Takeovers
+            </h3>
+            <p>Corporate legal officers at major Silicon Valley entities confirmed to BrieflyQ that four private equity syndicates have placed immediate holds on contract execution. The ruling directly impacts transactions involving exclusive sovereign cloud allocations.</p>
+          </div>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-[#1E2536] flex flex-wrap items-center justify-between gap-4 text-xs text-[#7A8294]">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]/40 flex items-center justify-center font-serif text-[#D4AF37] font-bold text-sm">
+              V
+            </div>
+            <div>
+              <div class="font-bold text-white">Jonathan Vance, J.D.</div>
+              <div class="text-[12px] text-[#7A8294]">Chief Regulatory & Chancery Analyst</div>
+            </div>
+          </div>
+          <button class="text-[#D4AF37] hover:text-[#EAD7BA] font-bold text-xs tracking-wider uppercase transition flex items-center gap-1.5">
+            Inspect Full Docket Dossier &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- REGULATORY RADAR & DOCKET WATCH -->
+      <aside class="lg:col-span-4 space-y-8">
+        
+        <div class="bg-[#0F1218] border border-[#1E2536] rounded-lg p-6">
+          <div class="flex items-center justify-between mb-5 border-b border-[#1E2536] pb-3.5">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-[#D4AF37]"></span>
+              <h2 class="font-serif font-bold text-white text-xl tracking-tight">Regulatory Radar</h2>
+            </div>
+            <span class="text-xs uppercase tracking-wider text-[#7A8294] font-bold">Priority Feed</span>
+          </div>
+
+          <div class="space-y-5">
+            <div class="group cursor-pointer">
+              <div class="flex items-center justify-between text-xs text-[#7A8294] mb-1">
+                <span class="text-[#D4AF37] font-bold uppercase tracking-wider">SEC Corp Finance</span>
+                <span>24m ago</span>
+              </div>
+              <h3 class="font-serif text-base font-semibold text-[#F2F4F8] group-hover:text-[#D4AF37] transition leading-snug">
+                Staff Legal Bulletin 14L Tightens Exclusions on Sovereign Wealth Governance Inquiries
+              </h3>
+              <p class="text-xs text-[#8E95A5] mt-1.5 line-clamp-2">
+                Public issuers can no longer bypass proxy ballot proposals scrutinizing state-owned cross-shareholdings.
+              </p>
+            </div>
+
+            <hr class="border-[#1E2536]">
+
+            <div class="group cursor-pointer">
+              <div class="flex items-center justify-between text-xs text-[#7A8294] mb-1">
+                <span class="text-[#38BDF8] font-bold uppercase tracking-wider">Federal Reserve</span>
+                <span>1h ago</span>
+              </div>
+              <h3 class="font-serif text-base font-semibold text-[#F2F4F8] group-hover:text-[#D4AF37] transition leading-snug">
+                Basel III Endgame Tier-2 Liquidity Rules Softened for Regional Custody Lenders
+              </h3>
+              <p class="text-xs text-[#8E95A5] mt-1.5 line-clamp-2">
+                Adjusted risk-weighted asset floors lowered from 19% to 14.5% after intensive private meetings.
+              </p>
+            </div>
+
+            <hr class="border-[#1E2536]">
+
+            <div class="group cursor-pointer">
+              <div class="flex items-center justify-between text-xs text-[#7A8294] mb-1">
+                <span class="text-[#F87171] font-bold uppercase tracking-wider">DOJ Antitrust Division</span>
+                <span>3h ago</span>
+              </div>
+              <h3 class="font-serif text-base font-semibold text-[#F2F4F8] group-hover:text-[#D4AF37] transition leading-snug">
+                Civil Investigative Demands Served on Direct Lending Clubs Over Coordinated Covenants
+              </h3>
+              <p class="text-xs text-[#8E95A5] mt-1.5 line-clamp-2">
+                Scrutinizing information sharing among non-bank syndicates governing $42B in software buyout credit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#0F1218] border border-[#1E2536] rounded-lg p-6">
+          <div class="flex items-center justify-between mb-4 border-b border-[#1E2536] pb-3">
+            <h2 class="font-serif font-bold text-white text-lg tracking-tight">Active Docket Watch</h2>
+            <span class="text-xs text-[#D4AF37] uppercase tracking-wider font-bold">Live Status</span>
+          </div>
+
+          <div class="space-y-3 text-xs">
+            <div class="p-3 rounded bg-[#141822] border border-[#232A3D] flex items-center justify-between">
+              <div>
+                <div class="font-bold text-white">FTC v. Meta Platforms</div>
+                <div class="text-[#7A8294] mt-0.5">D.D.C. • Monopolization Defense</div>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-[#D4AF37]/15 text-[#D4AF37] font-bold">Oral Arg Oct 29</span>
+            </div>
+
+            <div class="p-3 rounded bg-[#141822] border border-[#232A3D] flex items-center justify-between">
+              <div>
+                <div class="font-bold text-white">Citadel Securities v. SEC</div>
+                <div class="text-[#7A8294] mt-0.5">D.C. Cir. • Order Flow Routing</div>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-[#10B981]/15 text-[#10B981] font-bold">Ruling Imminent</span>
+            </div>
+
+            <div class="p-3 rounded bg-[#141822] border border-[#232A3D] flex items-center justify-between">
+              <div>
+                <div class="font-bold text-white">In re Paramount Shareholder Litigation</div>
+                <div class="text-[#7A8294] mt-0.5">Del. Ch. • Fiduciary Standards</div>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-[#38BDF8]/15 text-[#38BDF8] font-bold">Discovery Review</span>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+
+    <!-- 3-TIER EDITORIAL GRID -->
+    <div class="border-t border-[#1E2536] pt-10 mb-14">
+      <div class="flex flex-wrap items-baseline justify-between mb-8 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#D4AF37] block mb-1">The Capital & Court Ledger</span>
+          <h2 class="text-3xl font-serif font-bold text-white tracking-tight">Institutional Analyses</h2>
+        </div>
+        <div class="text-xs text-[#8E95A5] font-medium">
+          Curated by Wall Street and Chancery Court Legal Counsel
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- ARTICLE 1 -->
+        <article class="bg-[#0F1218] border border-[#1E2536] rounded-lg p-6 hover:border-[#2E374D] transition duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between text-xs text-[#7A8294] mb-3">
+              <span class="text-[#D4AF37] font-bold uppercase tracking-wider">Private Credit Restructuring</span>
+              <span>45m read</span>
+            </div>
+            <h3 class="font-serif font-bold text-xl text-white group-hover:text-[#D4AF37] transition leading-snug mb-3.5">
+              Direct Lenders Force Super-Senior Recapitalization on $650M Enterprise SaaS Facilities
+            </h3>
+
+            <!-- BLUF MEMO -->
+            <div class="bluf-memo bg-[#141822] border-l-2 border-[#D4AF37] p-3.5 rounded-r text-xs text-[#BAC1D2] mb-4 transition-all">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-[#D4AF37] block mb-1">⚡ BLUF Memorandum (36 Words):</span>
+              Apollo and Ares completed a priority restructuring for CloudMetrics, subordinating mezzanine creditors following covenant breach. Coupon resets to SOFR + 750 bps with equity warrant dilution reaching 22% of total capitalization.
+            </div>
+
+            <p class="regular-body text-xs text-[#8E95A5] leading-relaxed">
+              The maneuver marks a sharp resurgence in aggressive liability management exercises (LMEs) across private debt portfolios facing multiple compression.
+            </p>
+          </div>
+
+          <div class="mt-5 pt-3.5 border-t border-[#1E2536] flex items-center justify-between text-xs text-[#7A8294]">
+            <span class="font-medium">Credit Advisory Desk</span>
+            <span class="text-[#D4AF37] font-bold group-hover:translate-x-0.5 transition">Review Dossier &rarr;</span>
+          </div>
+        </article>
+
+        <!-- ARTICLE 2 -->
+        <article class="bg-[#0F1218] border border-[#1E2536] rounded-lg p-6 hover:border-[#2E374D] transition duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between text-xs text-[#7A8294] mb-3">
+              <span class="text-[#38BDF8] font-bold uppercase tracking-wider">Securities Class Action</span>
+              <span>1h ago</span>
+            </div>
+            <h3 class="font-serif font-bold text-xl text-white group-hover:text-[#D4AF37] transition leading-snug mb-3.5">
+              Second Circuit Reinstates Shareholder Action Over Premature AI GPU Revenue Bookings
+            </h3>
+
+            <!-- BLUF MEMO -->
+            <div class="bluf-memo bg-[#141822] border-l-2 border-[#D4AF37] p-3.5 rounded-r text-xs text-[#BAC1D2] mb-4 transition-all">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-[#D4AF37] block mb-1">⚡ BLUF Memorandum (41 Words):</span>
+              Overturning a lower dismissal, the 2nd U.S. Circuit Court ruled that premature recognition of cloud cluster pre-orders satisfies Section 10(b) scienter standards when top executives executed concurrent $45M in 10b5-1 executive stock dispositions.
+            </div>
+
+            <p class="regular-body text-xs text-[#8E95A5] leading-relaxed">
+              Circuit Judge Raymond Lohier ruled that customary forward-looking disclaimers fail to insulate corporate defendants when internal forecasts contradict GAAP.
+            </p>
+          </div>
+
+          <div class="mt-5 pt-3.5 border-t border-[#1E2536] flex items-center justify-between text-xs text-[#7A8294]">
+            <span class="font-medium">Securities Litigation</span>
+            <span class="text-[#D4AF37] font-bold group-hover:translate-x-0.5 transition">Review Dossier &rarr;</span>
+          </div>
+        </article>
+
+        <!-- ARTICLE 3 -->
+        <article class="bg-[#0F1218] border border-[#1E2536] rounded-lg p-6 hover:border-[#2E374D] transition duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between text-xs text-[#7A8294] mb-3">
+              <span class="text-[#10B981] font-bold uppercase tracking-wider">Antitrust Enforcement</span>
+              <span>3h ago</span>
+            </div>
+            <h3 class="font-serif font-bold text-xl text-white group-hover:text-[#D4AF37] transition leading-snug mb-3.5">
+              FTC Scrutinizes Frontier AI Hyperscaler Joint Ventures as De Facto Unreported Mergers
+            </h3>
+
+            <!-- BLUF MEMO -->
+            <div class="bluf-memo bg-[#141822] border-l-2 border-[#D4AF37] p-3.5 rounded-r text-xs text-[#BAC1D2] mb-4 transition-all">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-[#D4AF37] block mb-1">⚡ BLUF Memorandum (44 Words):</span>
+              The FTC issued formal 6(b) compulsory orders examining whether exclusive compute allocation agreements evade Hart-Scott-Rodino notification requirements. Regulators warned of daily civil penalties exceeding $50,120 per violation for structural circumvention.
+            </div>
+
+            <p class="regular-body text-xs text-[#8E95A5] leading-relaxed">
+              The inquiry scrutinizes multi-tier commercial observer rights that grant corporate giants operational oversight without official board votes.
+            </p>
+          </div>
+
+          <div class="mt-5 pt-3.5 border-t border-[#1E2536] flex items-center justify-between text-xs text-[#7A8294]">
+            <span class="font-medium">Washington Bureau</span>
+            <span class="text-[#D4AF37] font-bold group-hover:translate-x-0.5 transition">Review Dossier &rarr;</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- PRIVATE DISPATCH SUBSCRIPTION -->
+    <div class="border border-[#262E42] bg-gradient-to-r from-[#141824] via-[#10131C] to-[#080A0E] rounded-xl p-8 sm:p-12 relative overflow-hidden shadow-2xl">
+      <div class="max-w-2xl">
+        <span class="text-xs uppercase tracking-widest text-[#D4AF37] font-bold block mb-2">
+          Private Executive Syndicate
+        </span>
+        <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white tracking-tight mb-3">
+          The 6:30 AM Chancery & Wall Street Memorandum.
+        </h3>
+        <p class="text-sm text-[#9FA6B6] leading-relaxed mb-6 font-normal">
+          Designed specifically for corporate counsel, hedge fund general partners, and private equity decision-makers. No editorial filler — purely actionable BLUF digests, docket filings, and statutory cross-references.
+        </p>
+
+        <form onsubmit="event.preventDefault(); alert('Subscribed to BrieflyQ Executive Brief.');" class="flex flex-col sm:flex-row gap-3">
+          <input type="email" placeholder="counsel@partnerfirm.com" required class="px-4 py-3 rounded bg-[#080A0E] border border-[#2B354D] text-white text-xs placeholder-[#6B7280] focus:outline-none focus:border-[#D4AF37] w-full sm:w-80 transition">
+          <button type="submit" class="px-6 py-3 rounded bg-[#D4AF37] hover:bg-[#E5C158] text-slate-950 font-bold text-xs tracking-wider uppercase transition shadow-sm whitespace-nowrap">
+            Join 42,000+ Institutional Subscribers
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- LUXURY FOOTER WITH BQ LOGO -->
+  <footer class="border-t border-[#1A1F2C] bg-[#050608] py-12 text-xs text-[#7A8294]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <!-- BQ Footer Brand -->
+      <div class="flex items-center gap-4">
+        <div class="flex flex-col items-center justify-center">
+          <div class="bg-black border border-[#D4AF37] px-2 py-0.5 shadow-sm">
+            <span class="gq-monogram text-xl text-white tracking-tighter uppercase inline-block">
+              B<span class="text-[#D4AF37]">Q</span>
+            </span>
+          </div>
+          <span class="text-[7px] font-sans font-bold uppercase tracking-[0.35em] text-[#8E95A5] mt-0.5 pl-[0.35em]">
+            brieflyq
+          </span>
+        </div>
+        <div class="border-l border-[#1F2533] pl-3">
+          <div class="text-white font-bold">BrieflyQ Private Intelligence</div>
+          <p class="text-[11px] text-[#606775]">Covering the Delaware Court of Chancery, Wall Street M&A, and Federal Regulatory Agencies.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-6 text-xs text-[#8E95A5] font-medium">
+        <a href="#" class="hover:text-white transition">Chancery Dockets</a>
+        <a href="#" class="hover:text-white transition">GEO Protocol Standards</a>
+        <a href="#" class="hover:text-white transition">Editorial Ethics</a>
+        <a href="#" class="hover:text-white transition">Institutional Access</a>
+        <a href="#" class="hover:text-white transition">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let isGeoMode = false;
+    let isDark = true;
+
+    function toggleGeoMode() {
+      isGeoMode = !isGeoMode;
+      const content = document.getElementById('contentArea');
+      const btnText = document.getElementById('geoBtnText');
+      const btn = document.getElementById('geoToggleBtn');
+
+      if (isGeoMode) {
+        content.classList.add('geo-active');
+        btnText.innerText = 'GEO Briefing: Active';
+        btn.classList.add('bg-[#D4AF37]', 'text-slate-950', 'border-[#D4AF37]');
+        btn.classList.remove('bg-[#D4AF37]/10', 'text-[#F2F4F8]');
+      } else {
+        content.classList.remove('geo-active');
+        btnText.innerText = 'GEO Briefing: Off';
+        btn.classList.remove('bg-[#D4AF37]', 'text-slate-950', 'border-[#D4AF37]');
+        btn.classList.add('bg-[#D4AF37]/10', 'text-[#F2F4F8]');
+      }
+    }
+
+    function toggleTheme() {
+      isDark = !isDark;
+      const html = document.documentElement;
+      if (isDark) {
+        html.classList.add('dark');
+        document.body.classList.remove('bg-[#FAF7F2]', 'text-slate-900');
+        document.body.classList.add('bg-[#080A0E]', 'text-[#F2F4F8]');
+      } else {
+        html.classList.remove('dark');
+        document.body.classList.remove('bg-[#080A0E]', 'text-[#F2F4F8]');
+        document.body.classList.add('bg-[#FAF7F2]', 'text-slate-900');
+      }
+    }
+  </script>
+</body>
+</html>

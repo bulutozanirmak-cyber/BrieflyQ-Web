@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-track {
+  display: inline-flex;
+  animation: ticker 45s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+.gq-monogram {
+  font-family: var(--font-bodoni), "Bodoni Moda", serif;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.9;
+}
+
+.geo-active .regular-body {
+  opacity: 0.25;
+  filter: blur(0.3px);
+  transition: all 0.3s ease;
+}
+
+.geo-active .bluf-memo {
+  border-color: #D4AF37 !important;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(197, 155, 39, 0.05)) !important;
+  box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.25) !important;
+  transform: scale(1.008);
+}

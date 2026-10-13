@@ -9,33 +9,25 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       colors: {
-        "accent-1": "#FAFAFA",
-        "accent-2": "#EAEAEA",
-        "accent-7": "#333",
-        success: "#0070f3",
-        cyan: "#79FFE1",
+        brand: {
+          gold: "#D4AF37",
+          bronze: "#C59B27",
+          dark: "#080A0E",
+          surface: "#0F1218",
+          card: "#141822",
+          cardBorder: "#1E2536",
+          textMain: "#F2F4F8",
+          textMuted: "#8E95A5",
+        },
       },
-      spacing: {
-        28: "7rem",
+      fontFamily: {
+        gq: ["var(--font-bodoni)", "Bodoni Moda", "Didot", "Georgia", "serif"],
+        serif: ["var(--font-newsreader)", "Newsreader", "Georgia", "serif"],
+        sans: ["var(--font-sans)", "Plus Jakarta Sans", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
       },
       letterSpacing: {
         tighter: "-.04em",
-      },
-      fontSize: {
-        "5xl": "2.5rem",
-        "6xl": "2.75rem",
-        "7xl": "4.5rem",
-        "8xl": "6.25rem",
-      },
-      boxShadow: {
-        sm: "0 5px 10px rgba(0, 0, 0, 0.12)",
-        md: "0 8px 30px rgba(0, 0, 0, 0.12)",
       },
     },
   },

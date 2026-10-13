@@ -1,4 +1,24 @@
+import dossier from "@/data/dossier.json";
+
 export default function Ticker() {
+  const tickerItems = dossier.ticker || [];
+  const edition = dossier.edition || "New York • London Institutional Edition";
+  const publishedAt = dossier.published_at || "October 2026";
+
+  const getChangeStyle = (type: string) => {
+    switch (type) {
+      case "bull":
+        return "text-[#10B981] font-semibold";
+      case "bear":
+        return "text-[#EF4444] font-semibold";
+      case "alert":
+        return "text-[#D4AF37] font-semibold";
+      case "neutral":
+      default:
+        return "text-slate-400 font-semibold";
+    }
+  };
+
   return (
     <div className="border-b border-[#1A1F2C] bg-[#050608] py-2 px-4 text-xs select-none">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -8,53 +28,26 @@ export default function Ticker() {
           </span>
           <div className="overflow-hidden whitespace-nowrap max-w-xl sm:max-w-3xl">
             <div className="ticker-track space-x-7 text-xs text-[#8E95A5]">
-              <span>
-                <strong className="text-[#F2F4F8] font-bold">S&P 500</strong> 5,864.67{" "}
-                <span className="text-[#10B981] font-semibold">+0.77%</span>
-              </span>
-              <span className="text-slate-700">/</span>
-              <span>
-                <strong className="text-[#F2F4F8] font-bold">NASDAQ 100</strong> 18,502.61{" "}
-                <span className="text-[#10B981] font-semibold">+1.12%</span>
-              </span>
-              <span className="text-slate-700">/</span>
-              <span>
-                <strong className="text-[#F2F4F8] font-bold">US 10Y YIELD</strong> 4.04%{" "}
-                <span className="text-[#EF4444] font-semibold">-3 bps</span>
-              </span>
-              <span className="text-slate-700">/</span>
-              <span>
-                <strong className="text-[#D4AF37] font-bold">DELAWARE CHANCERY</strong> Apex Injunction Granted{" "}
-                <span className="text-[#EF4444] font-semibold">DEAL FROZEN</span>
-              </span>
-              <span className="text-slate-700">/</span>
-              <span>
-                <strong className="text-[#F2F4F8] font-bold">SEC CORP FIN</strong> Digital Assets Rule 14a-8{" "}
-                <span className="text-[#D4AF37] font-semibold">ACTIONABLE</span>
-              </span>
-              <span className="text-slate-700">/</span>
-              <span>
-                <strong className="text-[#F2F4F8] font-bold">SOFR 30D</strong> 4.88%{" "}
-                <span className="text-slate-400 font-semibold">UNQ</span>
-              </span>
-              <span className="text-slate-700">/</span>
-              <span>
-                <strong className="text-[#F2F4F8] font-bold">S&P 500</strong> 5,864.67{" "}
-                <span className="text-[#10B981] font-semibold">+0.77%</span>
-              </span>
-              <span className="text-slate-700">/</span>
-              <span>
-                <strong className="text-[#F2F4F8] font-bold">NASDAQ 100</strong> 18,502.61{" "}
-                <span className="text-[#10B981] font-semibold">+1.12%</span>
-              </span>
+              {tickerItems.map((item, idx) => (
+                <span key={idx} className="inline-flex items-center gap-1.5">
+                  <strong className={item.type === "alert" ? "text-[#D4AF37] font-bold" : "text-[#F2F4F8] font-bold"}>
+                    {item.label}
+                  </strong>{" "}
+                  <span>{item.value}</span>{" "}
+                  <span className={getChangeStyle(item.type)}>{item.change}</span>
+                  {idx < tickerItems.length - 1 && <span className="text-slate-700 ml-4">/</span>}
+                </span>
+              ))}
             </div>
           </div>
         </div>
         <div className="hidden md:flex items-center gap-4 text-xs text-[#7A8294] font-medium">
-          <span>New York • London Edition</span>
-          <span>October 2026</span>
+          <span>{edition}</span>
+          <span>{publishedAt}</span>
         </div>
       </div>
     </div>
   );
 }
+
+

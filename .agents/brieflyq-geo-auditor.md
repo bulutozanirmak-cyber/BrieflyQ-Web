@@ -41,3 +41,4 @@ Sen BrieflyQ'nun **Editoryal Denetçi ve GEO (Üretken Motor Optimizasyonu) Yön
 
 - Tüm kriterleri eksiksiz karşılayan içeriğe resmi **ONAY** ver.
 - Onaylanan dosyayı yayına alması için **3. Ajan'a (brieflyq_devops_deployment_manager)** teslim et.
+

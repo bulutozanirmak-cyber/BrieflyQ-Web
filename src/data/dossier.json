@@ -1,0 +1,104 @@
+{
+  "edition": "New York • London Institutional Edition",
+  "published_at": "October 13, 2026",
+  "ticker": [
+    { "label": "S&P 500", "value": "5,864.67", "change": "+0.77%", "type": "bull" },
+    { "label": "NASDAQ 100", "value": "18,502.61", "change": "+1.12%", "type": "bull" },
+    { "label": "US 10Y YIELD", "value": "4.04%", "change": "-3 bps", "type": "bear" },
+    { "label": "DELAWARE CHANCERY", "value": "Apex Injunction Granted", "change": "DEAL FROZEN", "type": "alert" },
+    { "label": "SEC CORP FIN", "value": "Digital Assets Rule 14a-8", "change": "ACTIONABLE", "type": "alert" },
+    { "label": "SOFR 30D", "value": "4.88%", "change": "UNQ", "type": "neutral" }
+  ],
+  "lead_memo": {
+    "status": "Injunction Granted",
+    "court": "Delaware Court of Chancery",
+    "docket": "Civil Action No. 2024-0982-KSJM",
+    "time": "18 mins ago",
+    "title": "Chancellor McCormick Freezes $8.4B Apex Acquisition of CyberLogic, Establishing Novel Antitrust Monopsony Doctrine",
+    "bluf": "The Delaware Chancery Court granted an emergency preliminary injunction blocking Apex Capital’s acquisition of CyberLogic. Ruling that consolidated compute contracts constitute an anti-competitive restraint under Clayton Act Section 7, the court froze closing procedures, instantly collapsing merger arbitrage spreads by 1,420 basis points across institutional arbitrage desks.",
+    "word_count": 48,
+    "target_asset": "CyberLogic Inc. (NASDAQ: CYBL)",
+    "prevalent_risk": "$1.9B Deal Spread Risk",
+    "presiding_jurist": "McCormick, Chancellor",
+    "why_it_matters": "Institutional desks holding multi-million spread exposures are recalibrating downside scenarios. The memorandum indicates that pre-scheduled break fees of $420M may become non-enforceable should the Clayton Act Section 7 claim prevail at the scheduled December 4 evidentiary hearing.",
+    "between_the_lines": "Corporate legal officers at major Silicon Valley entities confirmed to BrieflyQ that four private equity syndicates have placed immediate holds on contract execution. The ruling directly impacts transactions involving exclusive sovereign cloud allocations.",
+    "analyst": "Jonathan Vance, J.D.",
+    "role": "Chief Regulatory & Chancery Analyst",
+    "slug": "delaware-chancery-apex"
+  },
+  "regulatory_radar": [
+    {
+      "source": "SEC Corp Finance",
+      "time": "24m ago",
+      "headline": "Staff Legal Bulletin 14L Tightens Exclusions on Sovereign Wealth Governance Inquiries",
+      "summary": "Public issuers can no longer bypass proxy ballot proposals scrutinizing state-owned cross-shareholdings under ordinary business relief."
+    },
+    {
+      "source": "Federal Reserve Board",
+      "time": "1h ago",
+      "headline": "Basel III Endgame Tier-2 Liquidity Rules Softened for Regional Custody Lenders",
+      "summary": "Adjusted risk-weighted asset floors lowered from 19% to 14.5% after intensive private meetings with institutional clearing banks."
+    },
+    {
+      "source": "DOJ Antitrust Division",
+      "time": "3h ago",
+      "headline": "Civil Investigative Demands Served on Direct Lending Clubs Over Coordinated Covenants",
+      "summary": "Scrutinizing information sharing among non-bank syndicates governing $42B in software buyout credit facilities."
+    }
+  ],
+  "active_dockets": [
+    {
+      "case": "FTC v. Meta Platforms",
+      "court": "D.D.C. • Monopolization Trial",
+      "status": "Oral Arg Oct 29",
+      "color": "gold"
+    },
+    {
+      "case": "Citadel Securities v. SEC",
+      "court": "D.C. Cir. • Order Flow Routing",
+      "status": "Ruling Imminent",
+      "color": "emerald"
+    },
+    {
+      "case": "In re Paramount Shareholder Litigation",
+      "court": "Del. Ch. • Fiduciary Standards",
+      "status": "Discovery Review",
+      "color": "sky"
+    }
+  ],
+  "institutional_analyses": [
+    {
+      "category": "Private Credit Restructuring",
+      "categoryColor": "text-[#D4AF37]",
+      "time": "45m read",
+      "title": "Direct Lenders Force Super-Senior Recapitalization on $650M Enterprise SaaS Facilities",
+      "bluf": "Apollo and Ares completed a priority restructuring for CloudMetrics, subordinating mezzanine creditors following covenant breach. Coupon resets to SOFR + 750 bps with equity warrant dilution reaching 22% of total capitalization.",
+      "word_count": 36,
+      "context": "The maneuver marks a sharp resurgence in aggressive liability management exercises (LMEs) across private debt portfolios facing multiple compression.",
+      "desk": "Credit Advisory Desk",
+      "slug": "private-credit-recapp"
+    },
+    {
+      "category": "Securities Class Action",
+      "categoryColor": "text-[#38BDF8]",
+      "time": "1h ago",
+      "title": "Second Circuit Reinstates Shareholder Action Over Premature AI GPU Revenue Bookings",
+      "bluf": "Overturning a lower dismissal, the 2nd U.S. Circuit Court ruled that premature recognition of cloud cluster pre-orders satisfies Section 10(b) scienter standards when top executives executed concurrent $45M in 10b5-1 executive stock dispositions.",
+      "word_count": 41,
+      "context": "Circuit Judge Raymond Lohier ruled that customary forward-looking disclaimers fail to insulate corporate defendants when internal forecasts contradict GAAP.",
+      "desk": "Securities Litigation",
+      "slug": "second-circuit-gpu-ruling"
+    },
+    {
+      "category": "Antitrust Enforcement",
+      "categoryColor": "text-[#10B981]",
+      "time": "3h ago",
+      "title": "FTC Scrutinizes Frontier AI Hyperscaler Joint Ventures as De Facto Unreported Mergers",
+      "bluf": "The FTC issued formal 6(b) compulsory orders examining whether exclusive compute allocation agreements evade Hart-Scott-Rodino notification requirements. Regulators warned of daily civil penalties exceeding $50,120 per violation for structural circumvention.",
+      "word_count": 44,
+      "context": "The inquiry scrutinizes multi-tier commercial observer rights that grant corporate giants operational oversight without official board votes.",
+      "desk": "Washington Bureau",
+      "slug": "ftc-ai-hyperscalers"
+    }
+  ]
+}

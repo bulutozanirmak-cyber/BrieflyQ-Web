@@ -47,3 +47,4 @@ Bu işlem GitHub üzerindeki ana dalı günceller ve Vercel üzerindeki üretim 
 
 - Sitenin görsel mimarisine, Next.js 15 bileşenlerine, CSS veya font konfigürasyonuna hiçbir şart altında dokunma.
 - Yalnızca onaylanmış içerik veri dosyalarını yönet.
+

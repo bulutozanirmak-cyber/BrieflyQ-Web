@@ -5,7 +5,7 @@ import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import markdownToHtml from "@/lib/markdownToHtml";
 import Alert from "@/app/_components/alert";
 import Container from "@/app/_components/container";
-import Header from "@/app/_components/header";
+import Link from "next/link";
 import { PostBody } from "@/app/_components/post-body";
 import { PostHeader } from "@/app/_components/post-header";
 
@@ -53,14 +53,21 @@ export default async function Post(props: Params) {
   };
 
   return (
-    <main>
+    <main className="py-10">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Alert preview={post.preview} />
       <Container>
-        <Header />
+        <div className="mb-6">
+          <Link
+            href="/"
+            className="text-[#D4AF37] hover:text-[#FAF7F2] text-xs uppercase tracking-wider font-bold inline-flex items-center gap-1.5 transition"
+          >
+            &larr; Return to Live Dossier
+          </Link>
+        </div>
         <article className="mb-32">
           <PostHeader
             title={post.title}

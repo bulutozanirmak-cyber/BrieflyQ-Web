@@ -83,3 +83,4 @@ docket: "Civil Action No. 2024-0982-KSJM"
 
 - Arayüz bileşenlerine, CSS dosyalarına, logolara, BQ monogramına veya fontlara ASLA dokunma.
 - Tasarım dondurulmuştur; sadece `_posts/` dizinine içerik ekle.
+

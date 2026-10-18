@@ -68,7 +68,10 @@ export default function Header() {
           </div>
 
           {/* Editorial Navigation Links */}
-          <nav className="hidden lg:flex items-center space-x-8 text-xs font-bold uppercase tracking-wider text-[#9FA6B6]">
+          <nav className="hidden lg:flex items-center space-x-7 text-xs font-bold uppercase tracking-wider text-[#9FA6B6]">
+            <Link href="/#arbitrage-matrix" className="text-[#D4AF37] hover:text-white transition flex items-center gap-1.5 font-extrabold">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse"></span> Arbitrage Matrix
+            </Link>
             <Link href="/#dockets" className="text-white hover:text-[#D4AF37] transition">
               Chancery & Dockets
             </Link>
@@ -81,8 +84,8 @@ export default function Header() {
             <Link href="/#sovereign" className="hover:text-[#D4AF37] transition">
               Sovereign Wealth
             </Link>
-            <Link href="/#dossiers" className="hover:text-[#D4AF37] transition flex items-center gap-1.5 text-[#D4AF37]">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span> Executive Dossiers
+            <Link href="/#dossiers" className="hover:text-[#D4AF37] transition flex items-center gap-1.5">
+              Executive Dossiers
             </Link>
           </nav>
 

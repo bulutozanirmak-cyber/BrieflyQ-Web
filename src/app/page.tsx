@@ -1,5 +1,6 @@
 import HeroMemo from "@/app/_components/hero-memo";
 import RegulatoryRadar from "@/app/_components/regulatory-radar";
+import ArbitrageMatrix from "@/app/_components/arbitrage-matrix";
 import InstitutionalGrid from "@/app/_components/institutional-grid";
 import SovereignWealth from "@/app/_components/sovereign-wealth";
 import DossierArchive from "@/app/_components/dossier-archive";
@@ -16,6 +17,9 @@ export default function Index() {
         <HeroMemo slug={allPosts[0]?.slug} />
         <RegulatoryRadar />
       </div>
+
+      {/* Live Delaware Chancery M&A Arbitrage Spread Risk Matrix */}
+      <ArbitrageMatrix />
 
       {/* 3-Tier Institutional Analyses Grid */}
       <InstitutionalGrid posts={allPosts.slice(1)} />

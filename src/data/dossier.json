@@ -131,6 +131,52 @@
         "statute": "Hart-Scott-Rodino Antitrust Improvements Act [15 U.S.C. § 18a(g)(1)]",
         "penalties": "16 C.F.R. § 1.98 (Civil Monetary Penalty Inflation Adjustments)"
       }
+    },
+    {
+      "category": "Delaware Chancery M&A",
+      "categoryColor": "text-[#D4AF37]",
+      "published_at_iso": "2026-10-18T16:15:00Z",
+      "title": "Chancellor McCormick Orders Specific Performance in $580M Hostile Merger Sabotage",
+      "bluf": "The Delaware Chancery Court ordered specific performance compelling Nano Dimension to close its $580 million acquisition of Desktop Metal under DGCL § 251, compressing deal arbitrage spreads by 340 basis points.",
+      "word_count": 31,
+      "context": "Delaware Chancellor McCormick ruled that deliberate regulatory slow-walking by an activist board bloc breached contractual best efforts covenants.",
+      "desk": "Wilmington Bureau",
+      "slug": "desktop-metal-nano-dimension",
+      "primary_sources": {
+        "court": "Delaware Court of Chancery (Wilmington, DE)",
+        "docket_number": "C.A. No. 2024-0821-KSJM",
+        "statute": "Delaware General Corporation Law § 251; 31 C.F.R. § 800"
+      }
+    },
+    {
+      "category": "National Security & CFIUS",
+      "categoryColor": "text-[#E11D48]",
+      "published_at_iso": "2026-10-18T16:25:00Z",
+      "title": "CFIUS Orders Structural Ring-Fencing on $12B Sovereign AI Semiconductor Syndicate",
+      "bluf": "Under FIRRMA 50 U.S.C. § 4565, CFIUS mandated the complete divestiture of foreign voting governance rights and placed critical semiconductor IP into a blind domestic trust, widening syndicate financing spreads by 420 basis points.",
+      "word_count": 35,
+      "context": "The interagency committee blocked foreign state-backed limited partners from acquiring technical steering seats and source-code inspection privileges.",
+      "desk": "National Security Desk",
+      "slug": "pif-us-semiconductor-cfius",
+      "primary_sources": {
+        "agency": "Committee on Foreign Investment in the United States (CFIUS)",
+        "statute": "Foreign Investment Risk Review Modernization Act (FIRRMA), 50 U.S.C. § 4565"
+      }
+    },
+    {
+      "category": "Appellate Administrative Law",
+      "categoryColor": "text-[#818CF8]",
+      "published_at_iso": "2026-10-18T16:35:00Z",
+      "title": "D.C. Circuit Stays SEC Expanded Dealer Rule Across $2.1T Sovereign Debt Market",
+      "bluf": "The D.C. Circuit granted expedited review and stayed SEC Rules 3a5-4 and 3a44-2 under APA 5 U.S.C. § 706, halting broker-dealer registration mandates and tightening Treasury basis arbitrage spreads by 14 basis points.",
+      "word_count": 34,
+      "context": "The appellate panel found that industry petitioners demonstrated substantial likelihood of success challenging the SEC's conflation of proprietary traders with retail dealers.",
+      "desk": "Appellate Litigation Desk",
+      "slug": "sec-crypto-treasury-broker-dealer",
+      "primary_sources": {
+        "court": "U.S. Court of Appeals for the D.C. Circuit",
+        "statute": "Securities Exchange Act § 3(a)(5) [15 U.S.C. § 78c(a)(5)]; APA 5 U.S.C. § 706"
+      }
     }
   ],
   "sovereign_wealth_briefs": [
@@ -149,6 +195,73 @@
       "headline": "Gulf and Singapore Sovereigns Syndicate Direct Infrastructure Debt for Hyperscale Power Grids",
       "summary": "Executing non-recourse project financing covenants linked to power purchase agreements (PPAs), providing senior secured returns of SOFR + 380 bps.",
       "statute": "Federal Power Act Section 203 Jurisdictional Review [16 U.S.C. § 824b]"
+    }
+  ],
+  "arbitrage_matrix": [
+    {
+      "target": "CyberLogic Inc. (CYBL)",
+      "acquirer": "Apex Capital Corp",
+      "deal_value": "$8.4B",
+      "gross_spread": "+1,420 bps",
+      "spread_status": "widening",
+      "closing_prob": "34%",
+      "reverse_break_fee": "$420M (5.0%)",
+      "presiding_jurist": "McCormick, Chancellor",
+      "venue": "Del. Ch. (Wilmington)",
+      "next_milestone": "Dec 4 • Clayton Act Hearing",
+      "slug": "delaware-chancery-apex"
+    },
+    {
+      "target": "Desktop Metal (DM)",
+      "acquirer": "Nano Dimension Ltd.",
+      "deal_value": "$580M",
+      "gross_spread": "+340 bps",
+      "spread_status": "narrowing",
+      "closing_prob": "88%",
+      "reverse_break_fee": "$25M (4.3%)",
+      "presiding_jurist": "McCormick, Chancellor",
+      "venue": "Del. Ch. (Wilmington)",
+      "next_milestone": "Nov 12 • Specific Performance",
+      "slug": "desktop-metal-nano-dimension"
+    },
+    {
+      "target": "Discover Financial (DFS)",
+      "acquirer": "Capital One Financial",
+      "deal_value": "$35.3B",
+      "gross_spread": "+480 bps",
+      "spread_status": "widening",
+      "closing_prob": "56%",
+      "reverse_break_fee": "$1.38B (3.9%)",
+      "presiding_jurist": "Kanter, AAG (DOJ) / OCC",
+      "venue": "D.D.C. (Washington, D.C.)",
+      "next_milestone": "Nov 20 • HSR Statutory Expiry",
+      "slug": "capital-one-discover-merger"
+    },
+    {
+      "target": "Paramount Global (PARA)",
+      "acquirer": "Skydance Media Syndicate",
+      "deal_value": "$8.0B",
+      "gross_spread": "+110 bps",
+      "spread_status": "stable",
+      "closing_prob": "92%",
+      "reverse_break_fee": "$400M (5.0%)",
+      "presiding_jurist": "Zurn, Vice Chancellor",
+      "venue": "Del. Ch. (Wilmington)",
+      "next_milestone": "Oct 29 • MFW Oral Argument",
+      "slug": "paramount-skydance-shareholder-suits"
+    },
+    {
+      "target": "CloudMetrics SaaS",
+      "acquirer": "Apollo / Ares Syndicate",
+      "deal_value": "$650M",
+      "gross_spread": "+750 bps",
+      "spread_status": "stable",
+      "closing_prob": "100%",
+      "reverse_break_fee": "22% Warrant Dilution",
+      "presiding_jurist": "NY UCC Restructuring",
+      "venue": "S.D.N.Y. / Out-of-Court",
+      "next_milestone": "Oct 31 • Super-Priority Close",
+      "slug": "private-credit-recapp"
     }
   ]
 }

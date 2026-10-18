@@ -10,7 +10,7 @@ ogImage:
   url: "/assets/blog/paramount-skydance-shareholder-suits/cover.jpg"
 ---
 
-> **Executive Briefing Memorandum (BLUF)**  
+> **Executive Briefing Memorandum**  
 > The Delaware Chancery Court ordered evidentiary discovery into Paramount Global’s $8 billion merger with Skydance Media. Vice Chancellor Zurn ruled that dual-class voting disparity and controller payouts require Entire Fairness review under DGCL Section 141, threatening enforceability of a pre-scheduled $400 million reverse termination break fee across institutional merger arbitrage desks.
 
 ---
@@ -48,4 +48,3 @@ Institutional merger arbitrage desks are calibrating downside downside scenarios
 | **CourtListener RECAP Archive** | [CourtListener Docket #68821904 (Del. Ch.)](https://www.courtlistener.com/docket/68821904/in-re-paramount-global-stockholders/) |
 | **SEC EDGAR Filing** | Schedule 13E-3 Going-Private Transaction Statement Accession #0001193125-24-184902 |
 | **Statutory Basis** | Delaware General Corporation Law (8 Del. C. § 141 & § 251); *MFW* Doctrine |
-| **Audit Verification** | `GEO-CHANCERY-2026-10-PARAMOUNT-MFW-VERIFIED` |

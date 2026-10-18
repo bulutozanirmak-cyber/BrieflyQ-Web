@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Private institutional intelligence on the Delaware Court of Chancery, Wall Street M&A, and Federal Regulatory Agencies. GEO-optimized for executive decision-makers.",
+    "Private institutional intelligence on the Delaware Court of Chancery, Wall Street M&A, and Federal Regulatory Agencies.",
   keywords: [
     "BrieflyQ",
     "Delaware Chancery Court",

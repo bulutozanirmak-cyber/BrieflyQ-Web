@@ -92,7 +92,7 @@ export default function Header() {
           {/* Action Center */}
           <div className="flex items-center space-x-3">
             
-            {/* GEO Mode Button */}
+            {/* Executive Mode Toggle */}
             <button
               onClick={toggleGeo}
               className={`flex items-center gap-2 px-3.5 py-2 rounded border text-xs font-bold tracking-wide transition cursor-pointer shadow-sm ${
@@ -104,7 +104,7 @@ export default function Header() {
               <svg className="w-3.5 h-3.5 text-[#D4AF37]" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" />
               </svg>
-              <span>{geoMode ? "GEO Briefing: Active" : "GEO Briefing: Off"}</span>
+              <span>{geoMode ? "Executive View: Active" : "Executive View: Off"}</span>
             </button>
 
             {/* Theme Toggle */}

@@ -34,10 +34,7 @@ export default function Footer() {
             Chancery Dockets
           </Link>
           <Link href="/standards" className="hover:text-[#D4AF37] transition">
-            GEO Protocol Standards
-          </Link>
-          <Link href="/standards" className="hover:text-[#D4AF37] transition">
-            Editorial Ethics
+            Editorial Standards
           </Link>
           <Link href="/access" className="hover:text-[#D4AF37] transition">
             Institutional Access

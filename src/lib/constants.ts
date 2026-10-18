@@ -1,5 +1,3 @@
-export const EXAMPLE_PATH = "brieflyq-web";
-export const CMS_NAME = "Markdown & Next.js";
 export const SITE_NAME = "BrieflyQ";
 export const SITE_TAGLINE = "US Law & Capital Intelligence";
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://brieflyq.com";

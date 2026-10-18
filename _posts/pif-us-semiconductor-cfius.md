@@ -10,7 +10,7 @@ ogImage:
   url: "/assets/blog/pif-us-semiconductor-cfius/cover.jpg"
 ---
 
-> **Executive Briefing Memorandum (BLUF)**  
+> **Executive Briefing Memorandum**  
 > The Committee on Foreign Investment in the United States ordered structural mitigation on a $12 billion sovereign AI compute syndicate. Under FIRRMA 50 U.S.C. § 4565, CFIUS mandated the complete divestiture of foreign voting governance rights and placed critical semiconductor IP into a blind domestic trust, widening syndicate financing risk spreads by 420 basis points.
 
 ---
@@ -47,4 +47,3 @@ The regulatory intervention sent direct shockwaves through institutional cross-b
 | **Action Classification** | National Security Mitigation Agreement & Mandatory IP Trust Order |
 | **Treasury CFR Register** | Title 31 Code of Federal Regulations Part 800 (Provisions Pertaining to Certain Investments in the U.S.) |
 | **Statutory Authority** | Foreign Investment Risk Review Modernization Act (FIRRMA), 50 U.S.C. § 4565 |
-| **Audit Verification** | `GEO-TREASURY-CFIUS-2026-FIRRMA-IP-TRUST-VERIFIED` |

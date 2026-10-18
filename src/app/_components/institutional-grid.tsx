@@ -43,10 +43,10 @@ export default function InstitutionalGrid({ posts = [] }: Props) {
                 {dispatch.title}
               </h3>
 
-              {/* BLUF MEMO BLOCK */}
+              {/* EXECUTIVE SUMMARY BLOCK */}
               <div className="bluf-memo bg-[#141822] border-l-2 border-[#D4AF37] p-3.5 rounded-r text-xs text-[#BAC1D2] mb-4 transition-all">
                 <span className="text-[11px] font-bold uppercase tracking-wider text-[#D4AF37] block mb-1">
-                  ⚡ BLUF Memorandum ({dispatch.word_count || 40} Words):
+                  Executive Summary
                 </span>
                 {dispatch.bluf}
               </div>

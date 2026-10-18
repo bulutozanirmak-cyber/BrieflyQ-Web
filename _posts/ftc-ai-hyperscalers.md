@@ -10,7 +10,7 @@ ogImage:
   url: "/assets/blog/ftc-ai-hyperscalers/cover.jpg"
 ---
 
-> **Executive Briefing Memorandum (BLUF)**  
+> **Executive Briefing Memorandum**  
 > The FTC issued formal 6(b) compulsory orders examining whether exclusive compute allocation agreements evade Hart-Scott-Rodino notification requirements. Regulators warned of daily civil penalties exceeding $50,120 per violation for structural circumvention.
 
 ---
@@ -43,4 +43,3 @@ The inquiry signals heightened antitrust risks for cross-border AI consortia inv
 | **Antitrust Authority** | Clayton Act § 7A / Hart-Scott-Rodino Antitrust Improvements Act [15 U.S.C. § 18a] |
 | **Civil Monetary Penalties** | 16 C.F.R. § 1.98 ($50,120 per diem penalty for HSR filing omission) |
 | **Antitrust Division CID Liaison** | DOJ Antitrust Division Tech Taskforce Cross-Agency Clearance Protocol |
-| **Audit Verification** | `GEO-FTC-2026-10-6B-HSR-COMPLIANCE-VERIFIED` |

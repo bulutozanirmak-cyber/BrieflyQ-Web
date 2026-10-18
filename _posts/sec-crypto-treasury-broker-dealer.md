@@ -10,7 +10,7 @@ ogImage:
   url: "/assets/blog/sec-crypto-treasury-broker-dealer/cover.jpg"
 ---
 
-> **Executive Briefing Memorandum (BLUF)**  
+> **Executive Briefing Memorandum**  
 > The U.S. Court of Appeals for the District of Columbia Circuit granted expedited review and stayed SEC Rules 3a5-4 and 3a44-2 across the $2.1 trillion Treasury basis market. Invoking Exchange Act Section 3(a)(5) and APA 5 U.S.C. § 706, the panel halted broker-dealer registration mandates, narrowing benchmark Treasury basis arbitrage spreads by 14 basis points.
 
 ---
@@ -47,4 +47,3 @@ The stay delivered immediate equilibrium across fixed-income trading desks:
 | **Ruling Nature** | Order Granting Expedited Review and Administrative Injunction Pending Appeal |
 | **Regulatory Rule Package** | SEC Release No. 34-99477; File No. S7-12-22 (Further Definition of "As a Part of a Regular Business") |
 | **Statutory Authority** | Securities Exchange Act § 3(a)(5), 15 U.S.C. § 78c(a)(5); APA 5 U.S.C. § 706(2)(A) |
-| **Audit Verification** | `GEO-DCCIR-TREASURY-DEALER-RULE-STAY-2026-VERIFIED` |

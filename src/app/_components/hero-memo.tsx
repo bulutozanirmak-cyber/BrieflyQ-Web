@@ -36,10 +36,10 @@ export default function HeroMemo({ slug }: Props) {
       <div className="bluf-memo bg-[#141822] border-l-4 border-[#D4AF37] border-y border-r border-[#262E42] rounded-r-lg p-6 mb-7 shadow-lg transition-all duration-300">
         <div className="flex items-center justify-between mb-3 border-b border-[#262E42] pb-2.5">
           <div className="flex items-center gap-2 text-xs uppercase font-extrabold tracking-widest text-[#D4AF37]">
-            <span>Executive Briefing Memorandum (BLUF)</span>
+            <span>Executive Briefing Memorandum</span>
           </div>
           <span className="text-xs text-[#8E95A5] font-semibold tracking-wide">
-            Machine-Scraped Citation Tier 1
+            Verified Primary Docket
           </span>
         </div>
         

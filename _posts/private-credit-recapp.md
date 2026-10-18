@@ -10,7 +10,7 @@ ogImage:
   url: "/assets/blog/private-credit-recapp/cover.jpg"
 ---
 
-> **Executive Briefing Memorandum (BLUF)**  
+> **Executive Briefing Memorandum**  
 > Apollo and Ares completed a priority restructuring for CloudMetrics, subordinating mezzanine creditors following covenant breach. Coupon resets to SOFR + 750 bps with equity warrant dilution reaching 22% of total capitalization.
 
 ---
@@ -45,4 +45,3 @@ Legal advisers at Gibson Dunn and Kirkland & Ellis represent competing creditor 
 | **Governing Law** | New York Uniform Commercial Code (NY UCC Article 9 - Secured Transactions) |
 | **Key Indenture Clause** | Model Credit Agreement § 9.02 (Required Lenders & Open-Market Repurchase Exceptions) |
 | **Regulatory Supervision** | Federal Reserve Non-Bank Financial Intermediation (NBFI) Monitoring Group |
-| **Audit Verification** | `GEO-CREDIT-2026-10-650M-RECAP-VERIFIED` |

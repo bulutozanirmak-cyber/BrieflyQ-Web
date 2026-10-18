@@ -10,7 +10,7 @@ ogImage:
   url: "/assets/blog/blue-owl-private-debt-liquidity/cover.jpg"
 ---
 
-> **Executive Briefing Memorandum (BLUF)**  
+> **Executive Briefing Memorandum**  
 > The Direct Lending Syndicate, through the New York Supreme Court Commercial Division, enforced strict collateral restraints on a $1.2 billion private credit facility. Invoking N.Y. U.C.C. § 9-601 and LSTA Model Credit Agreement Section 2.05, lenders capped synthetic PIK interest at 4.5% and forced immediate cash sweeps, widening sponsor mezzanine yield spreads by 380 basis points.
 
 ---
@@ -47,4 +47,3 @@ The Commercial Division’s swift enforcement represents an inflection point in 
 | **Filing Classification** | Order Granting Injunction & Deposit Account Control Notice Enforcement |
 | **Governing Credit Standard** | LSTA Model Credit Agreement Standard Provisions (§ 2.05 Interest; § 8.01 Defaults) |
 | **Statutory Authority** | New York Uniform Commercial Code (N.Y. U.C.C. Article 9 § 9-104, § 9-601, § 9-607) |
-| **Audit Verification** | `GEO-NYCOMM-DIRECT-LENDING-2026-PIK-TOGGLE-VERIFIED` |

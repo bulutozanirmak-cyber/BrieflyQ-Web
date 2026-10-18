@@ -59,7 +59,7 @@ export default function Newsletter() {
           The 6:30 AM Chancery & Wall Street Memorandum.
         </h3>
         <p className="text-sm text-[#9FA6B6] leading-relaxed mb-6 font-normal">
-          Designed specifically for corporate counsel, hedge fund general partners, and private equity decision-makers. No editorial filler — purely actionable BLUF digests, docket filings, and statutory cross-references.
+          Designed specifically for corporate counsel, hedge fund general partners, and private equity decision-makers. No editorial filler — purely actionable executive briefs, docket filings, and statutory cross-references.
         </p>
 
         {subscribed ? (

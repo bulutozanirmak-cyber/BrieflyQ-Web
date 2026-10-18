@@ -10,7 +10,7 @@ ogImage:
   url: "/assets/blog/second-circuit-gpu-ruling/cover.jpg"
 ---
 
-> **Executive Briefing Memorandum (BLUF)**  
+> **Executive Briefing Memorandum**  
 > Overturning a lower dismissal, the 2nd U.S. Circuit Court ruled that premature recognition of cloud cluster pre-orders satisfies Section 10(b) scienter standards when top executives executed concurrent $45M in 10b5-1 executive stock dispositions.
 
 ---
@@ -44,4 +44,3 @@ The ruling remands the litigation to District Judge Jed Rakoff for discovery. De
 | **District Court Docket** | S.D.N.Y. Civ. No. 1:23-cv-07492-JSR (Rakoff, J., presiding on remand) |
 | **Statutory Law** | Securities Exchange Act § 10(b) [15 U.S.C. § 78j(b)]; SEC Rule 10b-5 [17 C.F.R. § 240.10b-5] |
 | **Accounting Standard** | Financial Accounting Standards Board (FASB) ASC Topic 606 (Revenue from Contracts) |
-| **Audit Verification** | `GEO-SEC-2026-10-2NDCIR-10B5-VERIFIED` |

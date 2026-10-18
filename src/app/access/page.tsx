@@ -42,7 +42,7 @@ export default function AccessPage() {
                   Daily 6:30 AM Chancery Memorandum
                 </h3>
                 <p className="text-xs text-[#8E95A5] leading-relaxed mb-4">
-                  Delivered directly to corporate inboxes prior to Wall Street opening bell. Includes complete BLUF extracts, statutory risks, and overnight docket updates.
+                  Delivered directly to corporate inboxes prior to Wall Street opening bell. Includes complete executive intelligence briefs, statutory risks, and overnight docket updates.
                 </p>
                 <ul className="text-xs space-y-2 text-[#BAC1D2] mb-6">
                   <li className="flex items-center gap-2">✓ Delaware Court of Chancery injunction alerts</li>

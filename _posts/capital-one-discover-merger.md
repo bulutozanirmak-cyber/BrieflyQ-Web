@@ -10,7 +10,7 @@ ogImage:
   url: "/assets/blog/capital-one-discover-merger/cover.jpg"
 ---
 
-> **Executive Briefing Memorandum (BLUF)**  
+> **Executive Briefing Memorandum**  
 > The DOJ Antitrust Division and Office of the Comptroller of the Currency issued civil investigative demands targeting Capital One’s $35.3 billion acquisition of Discover Financial. Regulators warned that combining dual-issuance networks violates Clayton Act Section 7, expanding market gross arbitrage spreads by 480 basis points amid imminent federal preliminary injunction proceedings.
 
 ---
@@ -46,4 +46,3 @@ Wall Street risk-arbitrage desks are pricing significant closing delays:
 | **Regulatory Filing** | OCC Bank Merger Application Docket No. 2024-NE-BMA-336781 |
 | **SEC Joint Proxy** | Form S-4 Registration Statement Accession #0001193125-24-071892 |
 | **Statutory Law** | Clayton Antitrust Act § 7 [15 U.S.C. § 18]; Bank Merger Act [12 U.S.C. § 1828(c)] |
-| **Audit Verification** | `GEO-DOJ-2026-10-35B-CAPONE-DISCOVER-VERIFIED` |

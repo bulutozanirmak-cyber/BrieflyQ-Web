@@ -10,7 +10,7 @@ ogImage:
   url: "/assets/blog/delaware-chancery-apex/cover.jpg"
 ---
 
-> **Executive Briefing Memorandum (BLUF)**  
+> **Executive Briefing Memorandum**  
 > The Delaware Chancery Court granted an emergency preliminary injunction blocking Apex Capital’s acquisition of CyberLogic. Ruling that consolidated compute contracts constitute an anti-competitive restraint under Clayton Act Section 7, the court froze closing procedures, instantly collapsing merger arbitrage spreads by 1,420 basis points across institutional arbitrage desks.
 
 ---
@@ -53,4 +53,3 @@ An interlocutory appeal to the Delaware Supreme Court is expected within 72 hour
 | **CourtListener RECAP Archive** | [CourtListener Docket #68902144 (Del. Ch.)](https://www.courtlistener.com/docket/68902144/apex-cyberlogic/) |
 | **SEC EDGAR Accession** | Form 8-K (Item 1.01 & 8.01) Accession #0001193125-26-089211 |
 | **Statutory Basis** | Clayton Antitrust Act § 7 (15 U.S.C. § 18); Delaware General Corporation Law (8 Del. C. § 251) |
-| **Audit Verification** | `GEO-CHANCERY-2026-10-84B-INJUNCTION-VERIFIED` |

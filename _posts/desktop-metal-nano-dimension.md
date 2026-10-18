@@ -10,7 +10,7 @@ ogImage:
   url: "/assets/blog/desktop-metal-nano-dimension/cover.jpg"
 ---
 
-> **Executive Briefing Memorandum (BLUF)**  
+> **Executive Briefing Memorandum**  
 > The Delaware Chancery Court ordered specific performance compelling Nano Dimension to close its $580 million acquisition of Desktop Metal. Chancellor McCormick ruled that deliberate CFIUS clearance delays orchestrated by an activist board bloc breached contractual reasonable best efforts under DGCL Section 251, instantly compressing deal arbitrage spreads by 340 basis points.
 
 ---
@@ -48,4 +48,3 @@ Following release of the Chancellor's bench ruling:
 | **CourtListener RECAP Archive** | [CourtListener Docket #69014288 (Del. Ch.)](https://www.courtlistener.com/docket/69014288/desktop-metal-nano-dimension/) |
 | **SEC EDGAR Accession** | Form 8-K Accession #0001213900-26-081299 (Item 8.01 Material Event) |
 | **Statutory Basis** | Delaware General Corporation Law (8 Del. C. § 251); CFIUS Regulations (31 C.F.R. § 800) |
-| **Audit Verification** | `GEO-CHANCERY-2026-10-SPECIFIC-PERF-DM-VERIFIED` |

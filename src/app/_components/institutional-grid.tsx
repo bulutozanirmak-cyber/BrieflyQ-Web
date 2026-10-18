@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Post } from "@/interfaces/post";
 import dossier from "@/data/dossier.json";
+import TimeAgo from "@/app/_components/time-ago";
 
 type Props = {
   posts?: Post[];
@@ -36,7 +37,7 @@ export default function InstitutionalGrid({ posts = [] }: Props) {
                 <span className={`font-bold uppercase tracking-wider ${dispatch.categoryColor}`}>
                   {dispatch.category}
                 </span>
-                <span>{dispatch.time}</span>
+                <TimeAgo date={dispatch.published_at_iso} format="short" className="text-[#8E95A5]" />
               </div>
               <h3 className="font-serif font-bold text-xl text-white group-hover:text-[#D4AF37] transition leading-snug mb-3.5">
                 {dispatch.title}
@@ -50,9 +51,15 @@ export default function InstitutionalGrid({ posts = [] }: Props) {
                 {dispatch.bluf}
               </div>
 
-              <p className="regular-body text-xs text-[#8E95A5] leading-relaxed">
+              <p className="regular-body text-xs text-[#8E95A5] leading-relaxed mb-3">
                 {dispatch.context}
               </p>
+
+              {dispatch.primary_sources?.regulatory_statute || dispatch.primary_sources?.governing_statute || dispatch.primary_sources?.statute ? (
+                <div className="text-[10px] text-[#7A8294] font-mono bg-[#141822]/70 px-2 py-1 rounded border border-[#1E2536] truncate">
+                  Law: {dispatch.primary_sources?.regulatory_statute || dispatch.primary_sources?.governing_statute || dispatch.primary_sources?.statute}
+                </div>
+              ) : null}
             </div>
 
             <div className="mt-5 pt-3.5 border-t border-[#1E2536] flex items-center justify-between text-xs text-[#7A8294]">

@@ -1,4 +1,5 @@
 import dossier from "@/data/dossier.json";
+import TimeAgo from "@/app/_components/time-ago";
 
 export default function RegulatoryRadar() {
   const radarItems = dossier.regulatory_radar || [];
@@ -44,7 +45,7 @@ export default function RegulatoryRadar() {
                   <span className={`font-bold uppercase tracking-wider ${getSourceColor(item.source)}`}>
                     {item.source}
                   </span>
-                  <span>{item.time}</span>
+                  <TimeAgo date={item.timestamp_iso} format="short" className="text-[#8E95A5]" />
                 </div>
                 <h3 className="font-serif text-base font-semibold text-[#F2F4F8] group-hover:text-[#D4AF37] transition leading-snug">
                   {item.headline}
@@ -52,6 +53,11 @@ export default function RegulatoryRadar() {
                 <p className="text-xs text-[#8E95A5] mt-1.5 line-clamp-2">
                   {item.summary}
                 </p>
+                {item.citation && (
+                  <div className="mt-2 text-[10px] text-[#7A8294] font-mono bg-[#141822] p-1.5 rounded border border-[#1E2536]/60">
+                    Ref: {item.citation}
+                  </div>
+                )}
               </div>
               {idx < radarItems.length - 1 && <hr className="border-[#1E2536] mt-5" />}
             </div>

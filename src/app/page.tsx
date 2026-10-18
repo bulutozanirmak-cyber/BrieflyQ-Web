@@ -1,6 +1,8 @@
 import HeroMemo from "@/app/_components/hero-memo";
 import RegulatoryRadar from "@/app/_components/regulatory-radar";
 import InstitutionalGrid from "@/app/_components/institutional-grid";
+import SovereignWealth from "@/app/_components/sovereign-wealth";
+import DossierArchive from "@/app/_components/dossier-archive";
 import Newsletter from "@/app/_components/newsletter";
 import { getAllPosts } from "@/lib/api";
 
@@ -18,8 +20,15 @@ export default function Index() {
       {/* 3-Tier Institutional Analyses Grid */}
       <InstitutionalGrid posts={allPosts.slice(1)} />
 
+      {/* Sovereign Wealth & Cross-Border Governance Monitor */}
+      <SovereignWealth />
+
+      {/* Complete Executive Dossiers Index */}
+      <DossierArchive />
+
       {/* Newsletter Syndicate */}
       <Newsletter />
     </main>
   );
 }
+

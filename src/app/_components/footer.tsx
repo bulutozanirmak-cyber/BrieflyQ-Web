@@ -27,19 +27,19 @@ export default function Footer() {
 
         {/* Footer Navigation */}
         <div className="flex flex-wrap items-center gap-6 text-xs text-[#8E95A5] font-medium">
-          <Link href="#dockets" className="hover:text-white transition">
+          <Link href="/#dockets" className="hover:text-[#D4AF37] transition">
             Chancery Dockets
           </Link>
-          <Link href="#geo" className="hover:text-white transition">
+          <Link href="/standards" className="hover:text-[#D4AF37] transition">
             GEO Protocol Standards
           </Link>
-          <Link href="#ethics" className="hover:text-white transition">
+          <Link href="/standards" className="hover:text-[#D4AF37] transition">
             Editorial Ethics
           </Link>
-          <Link href="#access" className="hover:text-white transition">
+          <Link href="/access" className="hover:text-[#D4AF37] transition">
             Institutional Access
           </Link>
-          <Link href="#privacy" className="hover:text-white transition">
+          <Link href="/privacy" className="hover:text-[#D4AF37] transition">
             Privacy Policy
           </Link>
         </div>

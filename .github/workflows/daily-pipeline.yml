@@ -1,0 +1,40 @@
+name: BrieflyQ Autonomous Daily Intelligence Pipeline
+
+on:
+  schedule:
+    # Runs every day at 06:00 UTC (09:00 AM Istanbul / 02:00 AM New York)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  intelligence-cycle:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Configure Git Identity
+        run: |
+          git config --global user.name "BrieflyQ Intelligence Bot"
+          git config --global user.email "bot@brieflyq.com"
+
+      - name: Execute 3-Agent Autonomous Pipeline
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/autonomous_intelligence_pipeline.py
+
+      - name: Push updates to main
+        run: |
+          git push origin main || echo "No changes to push or already up-to-date"

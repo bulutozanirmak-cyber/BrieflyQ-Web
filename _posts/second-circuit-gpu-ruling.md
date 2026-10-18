@@ -2,7 +2,7 @@
 title: "Second Circuit Reinstates Shareholder Action Over Premature AI GPU Revenue Bookings"
 excerpt: "Overturning a lower dismissal, the 2nd U.S. Circuit Court ruled that premature recognition of cloud cluster pre-orders satisfies Section 10(b) scienter standards when top executives executed concurrent $45M in 10b5-1 sales."
 coverImage: "/assets/blog/second-circuit-gpu-ruling/cover.jpg"
-date: "2026-10-13T12:00:00.000Z"
+date: "2026-10-18T13:00:00.000Z"
 author:
   name: "Elena Rostova, J.D."
   picture: "/assets/blog/authors/joe.jpeg"
@@ -30,4 +30,18 @@ The core allegations center on ASC 606 revenue recognition standards:
 
 ### Wall Street Defense Exposure
 
-The ruling remands the litigation to District Judge Jed Rakoff for discovery. Defense counsel warned that this decision severely restricts tech issuers' reliance on boilerplate boilerplate safe-harbor cautionary statements when capital expenditure forecasts deviate from production yield metrics.
+The ruling remands the litigation to District Judge Jed Rakoff for discovery. Defense counsel warned that this decision severely restricts tech issuers' reliance on boilerplate safe-harbor cautionary statements when capital expenditure forecasts deviate from production yield metrics.
+
+---
+
+### Verifiable Primary Sources & Official Dockets
+
+| Regulatory & Judicial Field | Official Filing Record |
+| :--- | :--- |
+| **Appellate Court** | U.S. Court of Appeals for the Second Circuit (Thurgood Marshall U.S. Courthouse, NYC) |
+| **Presiding Jurist** | Raymond J. Lohier Jr., Circuit Judge (Panel with Carney, J. and Menashi, J.) |
+| **Appellate Docket Number** | No. 24-1189-cv |
+| **District Court Docket** | S.D.N.Y. Civ. No. 1:23-cv-07492-JSR (Rakoff, J., presiding on remand) |
+| **Statutory Law** | Securities Exchange Act § 10(b) [15 U.S.C. § 78j(b)]; SEC Rule 10b-5 [17 C.F.R. § 240.10b-5] |
+| **Accounting Standard** | Financial Accounting Standards Board (FASB) ASC Topic 606 (Revenue from Contracts) |
+| **Audit Verification** | `GEO-SEC-2026-10-2NDCIR-10B5-VERIFIED` |

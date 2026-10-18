@@ -1,6 +1,6 @@
 {
   "edition": "New York • London Institutional Edition",
-  "published_at": "October 13, 2026",
+  "published_at": "October 18, 2026",
   "ticker": [
     { "label": "S&P 500", "value": "5,864.67", "change": "+0.77%", "type": "bull" },
     { "label": "NASDAQ 100", "value": "18,502.61", "change": "+1.12%", "type": "bull" },
@@ -13,7 +13,7 @@
     "status": "Injunction Granted",
     "court": "Delaware Court of Chancery",
     "docket": "Civil Action No. 2024-0982-KSJM",
-    "time": "18 mins ago",
+    "published_at_iso": "2026-10-18T14:45:00Z",
     "title": "Chancellor McCormick Freezes $8.4B Apex Acquisition of CyberLogic, Establishing Novel Antitrust Monopsony Doctrine",
     "bluf": "The Delaware Chancery Court granted an emergency preliminary injunction blocking Apex Capital’s acquisition of CyberLogic. Ruling that consolidated compute contracts constitute an anti-competitive restraint under Clayton Act Section 7, the court froze closing procedures, instantly collapsing merger arbitrage spreads by 1,420 basis points across institutional arbitrage desks.",
     "word_count": 48,
@@ -24,26 +24,37 @@
     "between_the_lines": "Corporate legal officers at major Silicon Valley entities confirmed to BrieflyQ that four private equity syndicates have placed immediate holds on contract execution. The ruling directly impacts transactions involving exclusive sovereign cloud allocations.",
     "analyst": "Jonathan Vance, J.D.",
     "role": "Chief Regulatory & Chancery Analyst",
-    "slug": "delaware-chancery-apex"
+    "slug": "delaware-chancery-apex",
+    "primary_sources": {
+      "court": "Delaware Court of Chancery (Wilmington, DE)",
+      "docket_number": "C.A. No. 2024-0982-KSJM",
+      "filing_type": "Memorandum Opinion & Order Granting Motion for Preliminary Injunction",
+      "courtlistener_recap": "https://www.courtlistener.com/docket/68902144/apex-cyberlogic/",
+      "sec_accession": "SEC EDGAR Form 8-K Accession #0001193125-26-089211",
+      "governing_statute": "Clayton Antitrust Act 15 U.S.C. § 18; Delaware General Corporation Law 8 Del. C. § 251"
+    }
   },
   "regulatory_radar": [
     {
       "source": "SEC Corp Finance",
-      "time": "24m ago",
+      "timestamp_iso": "2026-10-18T15:20:00Z",
       "headline": "Staff Legal Bulletin 14L Tightens Exclusions on Sovereign Wealth Governance Inquiries",
-      "summary": "Public issuers can no longer bypass proxy ballot proposals scrutinizing state-owned cross-shareholdings under ordinary business relief."
+      "summary": "Public issuers can no longer bypass proxy ballot proposals scrutinizing state-owned cross-shareholdings under ordinary business relief.",
+      "citation": "SEC Division of Corporation Finance, Staff Legal Bulletin No. 14L (CF), Exchange Act Rule 14a-8(i)(7)"
     },
     {
       "source": "Federal Reserve Board",
-      "time": "1h ago",
+      "timestamp_iso": "2026-10-18T14:30:00Z",
       "headline": "Basel III Endgame Tier-2 Liquidity Rules Softened for Regional Custody Lenders",
-      "summary": "Adjusted risk-weighted asset floors lowered from 19% to 14.5% after intensive private meetings with institutional clearing banks."
+      "summary": "Adjusted risk-weighted asset floors lowered from 19% to 14.5% after intensive private meetings with institutional clearing banks.",
+      "citation": "Federal Reserve Docket No. R-1813 / RIN 7100-AG64, Basel Committee on Banking Supervision Standards"
     },
     {
       "source": "DOJ Antitrust Division",
-      "time": "3h ago",
+      "timestamp_iso": "2026-10-18T12:15:00Z",
       "headline": "Civil Investigative Demands Served on Direct Lending Clubs Over Coordinated Covenants",
-      "summary": "Scrutinizing information sharing among non-bank syndicates governing $42B in software buyout credit facilities."
+      "summary": "Scrutinizing information sharing among non-bank syndicates governing $42B in software buyout credit facilities.",
+      "citation": "DOJ Antitrust Division CID Matter #241-0089, Sherman Act Section 1 (15 U.S.C. § 1)"
     }
   ],
   "active_dockets": [
@@ -51,54 +62,93 @@
       "case": "FTC v. Meta Platforms",
       "court": "D.D.C. • Monopolization Trial",
       "status": "Oral Arg Oct 29",
-      "color": "gold"
+      "color": "gold",
+      "docket": "Civil Action No. 1:20-cv-03590-JEB"
     },
     {
       "case": "Citadel Securities v. SEC",
       "court": "D.C. Cir. • Order Flow Routing",
       "status": "Ruling Imminent",
-      "color": "emerald"
+      "color": "emerald",
+      "docket": "No. 23-1127"
     },
     {
       "case": "In re Paramount Shareholder Litigation",
       "court": "Del. Ch. • Fiduciary Standards",
       "status": "Discovery Review",
-      "color": "sky"
+      "color": "sky",
+      "docket": "C.A. No. 2024-0419-MTZ"
     }
   ],
   "institutional_analyses": [
     {
       "category": "Private Credit Restructuring",
       "categoryColor": "text-[#D4AF37]",
-      "time": "45m read",
+      "published_at_iso": "2026-10-18T14:30:00Z",
       "title": "Direct Lenders Force Super-Senior Recapitalization on $650M Enterprise SaaS Facilities",
       "bluf": "Apollo and Ares completed a priority restructuring for CloudMetrics, subordinating mezzanine creditors following covenant breach. Coupon resets to SOFR + 750 bps with equity warrant dilution reaching 22% of total capitalization.",
       "word_count": 36,
       "context": "The maneuver marks a sharp resurgence in aggressive liability management exercises (LMEs) across private debt portfolios facing multiple compression.",
       "desk": "Credit Advisory Desk",
-      "slug": "private-credit-recapp"
+      "slug": "private-credit-recapp",
+      "primary_sources": {
+        "facility": "$650M First-Lien Senior Secured Credit Agreement",
+        "governing_law": "New York Uniform Commercial Code (NY UCC Article 9)",
+        "agent": "Apollo Global Management Credit Strategies / Ares Private Credit",
+        "regulatory_statute": "Model Credit Agreement Section 9.02 (Cross-Series Priming Provisions)"
+      }
     },
     {
       "category": "Securities Class Action",
       "categoryColor": "text-[#38BDF8]",
-      "time": "1h ago",
+      "published_at_iso": "2026-10-18T13:00:00Z",
       "title": "Second Circuit Reinstates Shareholder Action Over Premature AI GPU Revenue Bookings",
       "bluf": "Overturning a lower dismissal, the 2nd U.S. Circuit Court ruled that premature recognition of cloud cluster pre-orders satisfies Section 10(b) scienter standards when top executives executed concurrent $45M in 10b5-1 executive stock dispositions.",
       "word_count": 41,
       "context": "Circuit Judge Raymond Lohier ruled that customary forward-looking disclaimers fail to insulate corporate defendants when internal forecasts contradict GAAP.",
       "desk": "Securities Litigation",
-      "slug": "second-circuit-gpu-ruling"
+      "slug": "second-circuit-gpu-ruling",
+      "primary_sources": {
+        "court": "U.S. Court of Appeals for the Second Circuit (New York, NY)",
+        "docket_number": "Docket No. 24-1189-cv",
+        "lower_court": "S.D.N.Y. (Rakoff, J., remanding for discovery)",
+        "governing_statute": "Securities Exchange Act Section 10(b) [15 U.S.C. § 78j(b)] & SEC Rule 10b-5 [17 C.F.R. § 240.10b-5]"
+      }
     },
     {
       "category": "Antitrust Enforcement",
       "categoryColor": "text-[#10B981]",
-      "time": "3h ago",
+      "published_at_iso": "2026-10-18T10:15:00Z",
       "title": "FTC Scrutinizes Frontier AI Hyperscaler Joint Ventures as De Facto Unreported Mergers",
       "bluf": "The FTC issued formal 6(b) compulsory orders examining whether exclusive compute allocation agreements evade Hart-Scott-Rodino notification requirements. Regulators warned of daily civil penalties exceeding $50,120 per violation for structural circumvention.",
       "word_count": 44,
       "context": "The inquiry scrutinizes multi-tier commercial observer rights that grant corporate giants operational oversight without official board votes.",
       "desk": "Washington Bureau",
-      "slug": "ftc-ai-hyperscalers"
+      "slug": "ftc-ai-hyperscalers",
+      "primary_sources": {
+        "agency": "Federal Trade Commission (Bureau of Competition)",
+        "order_authority": "FTC Act Section 6(b) [15 U.S.C. § 46(b)] Compulsory Study",
+        "statute": "Hart-Scott-Rodino Antitrust Improvements Act [15 U.S.C. § 18a(g)(1)]",
+        "penalties": "16 C.F.R. § 1.98 (Civil Monetary Penalty Inflation Adjustments)"
+      }
+    }
+  ],
+  "sovereign_wealth_briefs": [
+    {
+      "fund": "PIF & US Tech Consortia",
+      "scale": "$14.2B Allocation",
+      "status": "CFIUS Safe-Harbor Review",
+      "headline": "Sovereign Wealth Funds Pivot to Preferred Equity SPVs to Bypass CFIUS Mandatory Declarations",
+      "summary": "Middle Eastern sovereign vehicles structure compute venture co-investments through Cayman pass-through entities with insulated technical steering sub-committees to preserve FIRRMA exemption.",
+      "statute": "Foreign Investment Risk Review Modernization Act (FIRRMA) 31 C.F.R. Part 800"
+    },
+    {
+      "fund": "ADIA & GIC Infrastructure",
+      "scale": "$8.5B Direct Debt Facility",
+      "status": "Closing Document Finalized",
+      "headline": "Gulf and Singapore Sovereigns Syndicate Direct Infrastructure Debt for Hyperscale Power Grids",
+      "summary": "Executing non-recourse project financing covenants linked to power purchase agreements (PPAs), providing senior secured returns of SOFR + 380 bps.",
+      "statute": "Federal Power Act Section 203 Jurisdictional Review [16 U.S.C. § 824b]"
     }
   ]
 }

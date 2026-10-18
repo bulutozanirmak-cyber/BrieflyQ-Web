@@ -69,19 +69,19 @@ export default function Header() {
 
           {/* Editorial Navigation Links */}
           <nav className="hidden lg:flex items-center space-x-8 text-xs font-bold uppercase tracking-wider text-[#9FA6B6]">
-            <Link href="#dockets" className="text-white hover:text-[#D4AF37] transition">
+            <Link href="/#dockets" className="text-white hover:text-[#D4AF37] transition">
               Chancery & Dockets
             </Link>
-            <Link href="#capital" className="hover:text-[#D4AF37] transition">
+            <Link href="/#capital" className="hover:text-[#D4AF37] transition">
               Private Credit & M&A
             </Link>
-            <Link href="#regulatory" className="hover:text-[#D4AF37] transition">
+            <Link href="/#regulatory" className="hover:text-[#D4AF37] transition">
               SEC & Antitrust
             </Link>
-            <Link href="#sovereign" className="hover:text-[#D4AF37] transition">
+            <Link href="/#sovereign" className="hover:text-[#D4AF37] transition">
               Sovereign Wealth
             </Link>
-            <Link href="#dossiers" className="hover:text-[#D4AF37] transition flex items-center gap-1.5 text-[#D4AF37]">
+            <Link href="/#dossiers" className="hover:text-[#D4AF37] transition flex items-center gap-1.5 text-[#D4AF37]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span> Executive Dossiers
             </Link>
           </nav>
@@ -116,9 +116,12 @@ export default function Header() {
             </button>
 
             {/* Partner Brief CTA */}
-            <button className="hidden sm:inline-flex px-4 py-2 rounded bg-[#D4AF37] hover:bg-[#E5C158] text-slate-950 font-extrabold text-xs tracking-wider uppercase transition shadow-sm">
+            <Link
+              href="/#newsletter"
+              className="hidden sm:inline-flex px-4 py-2 rounded bg-[#D4AF37] hover:bg-[#E5C158] text-slate-950 font-extrabold text-xs tracking-wider uppercase transition shadow-sm"
+            >
               Partner Brief
-            </button>
+            </Link>
           </div>
 
         </div>

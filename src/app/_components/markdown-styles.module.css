@@ -34,3 +34,24 @@
   @apply border-[#1E2536] my-8;
 }
 
+.markdown table {
+  @apply w-full text-xs text-[#BAC1D2] border-collapse my-8 rounded-lg overflow-hidden border border-[#1E2536];
+}
+
+.markdown th {
+  @apply bg-[#141822] text-[#D4AF37] font-bold p-3 text-left border-b border-[#1E2536] uppercase tracking-wider text-[11px];
+}
+
+.markdown td {
+  @apply p-3 border-b border-[#1E2536]/50 bg-[#0F1218];
+}
+
+.markdown tr:last-child td {
+  @apply border-b-0;
+}
+
+.markdown code {
+  @apply font-mono text-xs bg-[#141822] text-[#D4AF37] px-1.5 py-0.5 rounded border border-[#1E2536];
+}
+
+

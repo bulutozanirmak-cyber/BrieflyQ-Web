@@ -1,5 +1,6 @@
 import Link from "next/link";
 import dossier from "@/data/dossier.json";
+import TimeAgo from "@/app/_components/time-ago";
 
 type Props = {
   slug?: string;
@@ -23,7 +24,7 @@ export default function HeroMemo({ slug }: Props) {
         <span className="text-slate-600">•</span>
         <span className="text-[#8E95A5]">{memo.docket}</span>
         <span className="text-slate-600">•</span>
-        <span className="text-[#8E95A5]">{memo.time}</span>
+        <TimeAgo date={memo.published_at_iso} format="short" className="text-[#8E95A5]" />
       </div>
 
       {/* Headline */}
@@ -87,6 +88,18 @@ export default function HeroMemo({ slug }: Props) {
           <p>
             {memo.between_the_lines}
           </p>
+        </div>
+      {/* Primary Source Verification Badge */}
+      <div className="mt-6 p-3.5 rounded bg-[#0B0E15] border border-[#1E2536] flex flex-wrap items-center justify-between gap-3 text-xs text-[#8E95A5]">
+        <div className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]"></span>
+          <span className="text-[#D4AF37] font-bold uppercase tracking-wider text-[11px]">Primary Record:</span>
+          <span className="text-white font-medium">{memo.primary_sources?.court}</span>
+          <span className="text-slate-600">•</span>
+          <span className="font-mono text-[#BAC1D2]">{memo.primary_sources?.docket_number}</span>
+        </div>
+        <div className="text-[11px] text-[#7A8294]">
+          <span className="text-[#D4AF37] font-semibold">Statute:</span> {memo.primary_sources?.governing_statute}
         </div>
       </div>
 

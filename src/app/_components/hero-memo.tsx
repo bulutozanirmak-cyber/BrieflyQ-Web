@@ -89,6 +89,8 @@ export default function HeroMemo({ slug }: Props) {
             {memo.between_the_lines}
           </p>
         </div>
+      </div>
+
       {/* Primary Source Verification Badge */}
       <div className="mt-6 p-3.5 rounded bg-[#0B0E15] border border-[#1E2536] flex flex-wrap items-center justify-between gap-3 text-xs text-[#8E95A5]">
         <div className="flex items-center gap-2">

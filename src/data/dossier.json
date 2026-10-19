@@ -1,19 +1,49 @@
 {
   "edition": "New York • London Institutional Edition",
-  "published_at": "October 18, 2026",
+  "published_at": "October 19, 2026",
   "ticker": [
-    { "label": "S&P 500", "value": "5,864.67", "change": "+0.77%", "type": "bull" },
-    { "label": "NASDAQ 100", "value": "18,502.61", "change": "+1.12%", "type": "bull" },
-    { "label": "US 10Y YIELD", "value": "4.04%", "change": "-3 bps", "type": "bear" },
-    { "label": "DELAWARE CHANCERY", "value": "Apex Injunction Granted", "change": "DEAL FROZEN", "type": "alert" },
-    { "label": "SEC CORP FIN", "value": "Digital Assets Rule 14a-8", "change": "ACTIONABLE", "type": "alert" },
-    { "label": "SOFR 30D", "value": "4.88%", "change": "UNQ", "type": "neutral" }
+    {
+      "label": "S&P 500",
+      "value": "5,864.67",
+      "change": "+0.77%",
+      "type": "bull"
+    },
+    {
+      "label": "NASDAQ 100",
+      "value": "18,502.61",
+      "change": "+1.12%",
+      "type": "bull"
+    },
+    {
+      "label": "US 10Y YIELD",
+      "value": "4.04%",
+      "change": "-3 bps",
+      "type": "bear"
+    },
+    {
+      "label": "DELAWARE CHANCERY",
+      "value": "Apex Injunction Granted",
+      "change": "DEAL FROZEN",
+      "type": "alert"
+    },
+    {
+      "label": "SEC CORP FIN",
+      "value": "Digital Assets Rule 14a-8",
+      "change": "ACTIONABLE",
+      "type": "alert"
+    },
+    {
+      "label": "SOFR 30D",
+      "value": "4.88%",
+      "change": "UNQ",
+      "type": "neutral"
+    }
   ],
   "lead_memo": {
     "status": "Injunction Granted",
     "court": "Delaware Court of Chancery",
     "docket": "Civil Action No. 2024-0982-KSJM",
-    "published_at_iso": "2026-10-18T14:45:00Z",
+    "published_at_iso": "2026-10-19T12:38:50.934212+00:00",
     "title": "Chancellor McCormick Freezes $8.4B Apex Acquisition of CyberLogic, Establishing Novel Antitrust Monopsony Doctrine",
     "bluf": "The Delaware Chancery Court granted an emergency preliminary injunction blocking Apex Capital’s acquisition of CyberLogic. Ruling that consolidated compute contracts constitute an anti-competitive restraint under Clayton Act Section 7, the court froze closing procedures, instantly collapsing merger arbitrage spreads by 1,420 basis points across institutional arbitrage desks.",
     "word_count": 48,

@@ -1,6 +1,6 @@
 {
   "edition": "New York • London Institutional Edition",
-  "published_at": "October 21, 2026",
+  "published_at": "October 22, 2026",
   "ticker": [
     {
       "label": "S&P 500",
@@ -43,7 +43,7 @@
     "status": "Injunction Granted",
     "court": "Delaware Court of Chancery",
     "docket": "Civil Action No. 2024-0982-KSJM",
-    "published_at_iso": "2026-10-21T11:27:17.224988+00:00",
+    "published_at_iso": "2026-10-22T11:27:15.715599+00:00",
     "title": "Chancellor McCormick Freezes $8.4B Apex Acquisition of CyberLogic, Establishing Novel Antitrust Monopsony Doctrine",
     "bluf": "The Delaware Chancery Court granted an emergency preliminary injunction blocking Apex Capital’s acquisition of CyberLogic. Ruling that consolidated compute contracts constitute an anti-competitive restraint under Clayton Act Section 7, the court froze closing procedures, instantly collapsing merger arbitrage spreads by 1,420 basis points across institutional arbitrage desks.",
     "word_count": 48,

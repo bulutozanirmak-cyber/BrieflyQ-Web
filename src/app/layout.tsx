@@ -2,6 +2,8 @@ import Footer from "@/app/_components/footer";
 import Header from "@/app/_components/header";
 import Ticker from "@/app/_components/ticker";
 import SubBar from "@/app/_components/sub-bar";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { SITE_NAME, SITE_URL, HOME_OG_IMAGE_URL, SITE_TAGLINE } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Newsreader, Bodoni_Moda } from "next/font/google";
@@ -109,6 +111,8 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

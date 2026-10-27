@@ -47,3 +47,4 @@ The regulatory modifications significantly reshape transaction economics, merger
 | **Statutory Authority** | Hart-Scott-Rodino Antitrust Improvements Act (15 U.S.C. § 18a(d)); Clayton Act Section 7 (15 U.S.C. § 18) |
 | **Administrative Code** | Title 16 Code of Federal Regulations (16 C.F.R. Parts 801, 802, and 803) |
 | **Public Agency Archive** | [FTC Premerger Notification Office Official Docket](https://www.ftc.gov/enforcement/premerger-notification-program) |
+

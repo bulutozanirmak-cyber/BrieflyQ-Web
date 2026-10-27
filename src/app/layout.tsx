@@ -84,6 +84,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "google6a3339ac748273ef",
+  },
 };
 
 export default function RootLayout({
@@ -100,6 +103,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+        <meta name="google-site-verification" content="google6a3339ac748273ef" />
       </head>
       <body
         className={`${sans.variable} ${newsreader.variable} ${bodoni.variable} font-sans bg-[#080A0E] text-[#F2F4F8] min-h-screen selection:bg-[#D4AF37] selection:text-black antialiased transition-colors duration-300`}

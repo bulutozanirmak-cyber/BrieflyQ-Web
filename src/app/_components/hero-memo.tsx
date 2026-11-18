@@ -65,116 +65,146 @@ export default function HeroMemo({ post, slug }: Props) {
   }
 
   return (
-    <article className="lg:col-span-8 bg-[#0F1218] border border-[#1E2536] rounded-lg p-7 sm:p-9 hover:border-[#2E374D] transition duration-300 relative group">
+    <article className="lg:col-span-8 bg-gradient-to-b from-[#131722] via-[#0E121A] to-[#0A0D14] border border-[#232B3E] hover:border-[#D4AF37]/50 rounded-xl p-6 sm:p-9 lg:p-10 shadow-[0_12px_40px_rgba(0,0,0,0.45)] transition-all duration-300 relative group overflow-hidden">
       
-      {/* Category, Docket, and Status */}
-      <div className="flex flex-wrap items-center gap-3 mb-4 text-xs">
-        <span className="px-2.5 py-1 rounded bg-[#EF4444]/10 text-[#F87171] border border-[#EF4444]/20 font-bold uppercase tracking-wider">
+      {/* Ambient Radial Accent */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#D4AF37]/[0.06] via-[#10B981]/[0.015] to-transparent blur-3xl pointer-events-none" />
+
+      {/* Top Administrative & Judicial Ribbon */}
+      <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 mb-5 text-xs">
+        <span className="px-2.5 py-1 rounded-md bg-[#EF4444]/15 text-[#FCA5A5] border border-[#EF4444]/30 font-extrabold uppercase tracking-wider text-[11px] shadow-sm">
           {status}
         </span>
-        <span className="text-[#D4AF37] font-semibold tracking-wide">
+        <span className="px-2.5 py-1 rounded-md bg-[#D4AF37]/15 text-[#E5C158] border border-[#D4AF37]/35 font-bold tracking-wide text-xs">
           {court}
         </span>
-        <span className="text-slate-600">•</span>
-        <span className="text-[#8E95A5]">{docket}</span>
-        <span className="text-slate-600">•</span>
-        <TimeAgo date={date} format="short" className="text-[#8E95A5]" />
+        <span className="text-slate-600 hidden sm:inline">•</span>
+        <span className="px-2.5 py-1 rounded-md bg-[#080A0E] border border-[#1E2536] text-[#A0A7B8] font-mono text-[11px]">
+          {docket}
+        </span>
+        <span className="text-slate-600 hidden sm:inline">•</span>
+        <div className="flex items-center gap-1.5 text-[#8E95A5] text-[11px] font-medium ml-auto sm:ml-0">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]"></span>
+          <TimeAgo date={date} format="short" className="text-[#8E95A5]" />
+        </div>
       </div>
 
-      {/* Headline */}
-      <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-serif font-bold text-white tracking-tight leading-[1.18] mb-6 group-hover:text-[#FAF7F2] transition">
-        <Link href={`/posts/${targetSlug}`}>{title}</Link>
+      {/* Flagship Editorial Headline */}
+      <h1 className="text-2xl sm:text-4xl lg:text-[42px] font-serif font-bold text-white tracking-tight leading-[1.18] mb-6 group-hover:text-[#FAF7F2] transition-colors">
+        <Link href={`/posts/${targetSlug}`} className="hover:underline decoration-[#D4AF37]/40 underline-offset-4">
+          {title}
+        </Link>
       </h1>
 
-      {/* EXECUTIVE MEMO BLOCK */}
-      <div className="bluf-memo bg-[#141822] border-l-4 border-[#D4AF37] border-y border-r border-[#262E42] rounded-r-lg p-6 mb-7 shadow-lg transition-all duration-300">
-        <div className="flex items-center justify-between mb-3 border-b border-[#262E42] pb-2.5">
+      {/* THE SIGNATURE EXECUTIVE BLUF MEMO CARD */}
+      <div className="bluf-memo bg-[#0C1018] border-l-4 border-l-[#D4AF37] border-y border-r border-[#262E44] rounded-r-xl p-5 sm:p-7 mb-7 shadow-[0_8px_30px_rgba(0,0,0,0.35)] transition-all duration-300 relative">
+        <div className="flex items-center justify-between mb-4 border-b border-[#232B3E] pb-3">
           <div className="flex items-center gap-2 text-xs uppercase font-extrabold tracking-widest text-[#D4AF37]">
-            <span>Executive Briefing Memorandum</span>
+            <svg className="w-4 h-4 text-[#D4AF37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            <span>Executive Bench Memorandum // BLUF</span>
           </div>
-          <span className="text-xs text-[#8E95A5] font-semibold tracking-wide">
+          <span className="inline-flex items-center gap-1.5 text-[11px] text-[#10B981] font-bold tracking-wide uppercase px-2 py-0.5 rounded bg-[#10B981]/10 border border-[#10B981]/20">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]"></span>
             Verified Primary Docket
           </span>
         </div>
         
-        {/* The Exact BLUF text */}
-        <p className="text-base sm:text-lg font-serif italic text-[#FAF7F2] leading-relaxed mb-4">
-          “{bluf}”
-        </p>
+        {/* The Exact BLUF Text with Refined Typography & Quotation Marks */}
+        <div className="relative mb-5">
+          <p className="text-base sm:text-[19px] font-serif italic text-[#FAF7F2] leading-relaxed">
+            <span className="text-[#D4AF37] font-serif text-2xl sm:text-3xl leading-none select-none font-bold mr-1">“</span>
+            {bluf}
+            <span className="text-[#D4AF37] font-serif text-2xl sm:text-3xl leading-none select-none font-bold ml-1">”</span>
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-3 border-t border-[#262E42] text-xs text-[#8E95A5]">
-          <div>
-            <span className="text-[#7A8294] block uppercase text-[11px] tracking-wider font-bold">
+        {/* 3-Tier Exposure Telemetry */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-4 border-t border-[#202738] text-xs">
+          <div className="bg-[#121622] p-2.5 rounded-md border border-[#1E2536]">
+            <span className="text-[#7A8294] block uppercase text-[10px] tracking-widest font-extrabold mb-0.5">
               JURISDICTION / FORUM
-            </span>{" "}
-            <strong className="text-white truncate block">{court}</strong>
+            </span>
+            <strong className="text-white truncate block font-medium">{court}</strong>
           </div>
-          <div>
-            <span className="text-[#7A8294] block uppercase text-[11px] tracking-wider font-bold">
+          <div className="bg-[#121622] p-2.5 rounded-md border border-[#1E2536]">
+            <span className="text-[#7A8294] block uppercase text-[10px] tracking-widest font-extrabold mb-0.5">
               PREVALENT EXPOSURE
-            </span>{" "}
-            <strong className="text-[#EF4444] truncate block">{prevalentRisk}</strong>
+            </span>
+            <strong className="text-[#EF4444] truncate block font-mono font-bold">{prevalentRisk}</strong>
           </div>
-          <div>
-            <span className="text-[#7A8294] block uppercase text-[11px] tracking-wider font-bold">
+          <div className="bg-[#121622] p-2.5 rounded-md border border-[#1E2536]">
+            <span className="text-[#7A8294] block uppercase text-[10px] tracking-widest font-extrabold mb-0.5">
               PRESIDING JURIST / AGENCY
-            </span>{" "}
-            <strong className="text-white truncate block">{jurist}</strong>
+            </span>
+            <strong className="text-[#FAF7F2] truncate block font-medium">{jurist}</strong>
           </div>
         </div>
       </div>
 
-      {/* Smart Brevity Sections */}
-      <div className="regular-body space-y-6 text-[#BAC1D2] text-base leading-relaxed">
-        <div className="border-l border-[#2B354D] pl-5">
-          <h3 className="font-serif font-bold text-white text-lg tracking-tight mb-1.5 text-[#EAD7BA]">
-            1. Strategic Impact & Capital Exposure
-          </h3>
-          <p>
+      {/* Smart Brevity Analytical Sections */}
+      <div className="regular-body space-y-6 text-[#BAC1D2] text-[15px] sm:text-base leading-relaxed mb-6">
+        <div className="border-l-2 border-[#D4AF37]/50 pl-5 bg-gradient-to-r from-[#D4AF37]/[0.02] to-transparent py-1">
+          <div className="flex items-center gap-2 mb-1.5">
+            <span className="text-[11px] font-mono font-bold text-[#D4AF37] uppercase tracking-wider px-1.5 py-0.5 rounded bg-[#D4AF37]/10">
+              SECTION 01
+            </span>
+            <h3 className="font-serif font-bold text-white text-lg tracking-tight text-[#FAF7F2]">
+              Strategic Impact &amp; Capital Exposure
+            </h3>
+          </div>
+          <p className="text-[#C4C9D8] leading-relaxed">
             {whyItMatters}
           </p>
         </div>
 
-        <div className="border-l border-[#2B354D] pl-5">
-          <h3 className="font-serif font-bold text-white text-lg tracking-tight mb-1.5 text-[#EAD7BA]">
-            2. Precedent for Transactions & Litigation
-          </h3>
-          <p>
+        <div className="border-l-2 border-[#38BDF8]/50 pl-5 bg-gradient-to-r from-[#38BDF8]/[0.02] to-transparent py-1">
+          <div className="flex items-center gap-2 mb-1.5">
+            <span className="text-[11px] font-mono font-bold text-[#38BDF8] uppercase tracking-wider px-1.5 py-0.5 rounded bg-[#38BDF8]/10">
+              SECTION 02
+            </span>
+            <h3 className="font-serif font-bold text-white text-lg tracking-tight text-[#FAF7F2]">
+              Precedent for Transactions &amp; Litigation
+            </h3>
+          </div>
+          <p className="text-[#C4C9D8] leading-relaxed">
             {betweenTheLines}
           </p>
         </div>
       </div>
 
-      {/* Primary Source Verification Badge */}
-      <div className="mt-6 p-3.5 rounded bg-[#0B0E15] border border-[#1E2536] flex flex-wrap items-center justify-between gap-3 text-xs text-[#8E95A5]">
-        <div className="flex items-center gap-2">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]"></span>
+      {/* Primary Source Verification Docket Bar */}
+      <div className="p-3.5 sm:p-4 rounded-lg bg-[#080B10] border border-[#1E2536] flex flex-wrap items-center justify-between gap-3 text-xs text-[#8E95A5]">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-[#10B981]"></span>
           <span className="text-[#D4AF37] font-bold uppercase tracking-wider text-[11px]">Primary Record:</span>
           <span className="text-white font-medium">{court}</span>
           <span className="text-slate-600">•</span>
-          <span className="font-mono text-[#BAC1D2]">{docket}</span>
+          <span className="font-mono text-[#BAC1D2] bg-[#141822] px-2 py-0.5 rounded border border-[#232938]">{docket}</span>
         </div>
-        <div className="text-[11px] text-[#7A8294]">
-          <span className="text-[#D4AF37] font-semibold">Statute:</span> {statute}
+        <div className="text-[11px] text-[#7A8294] font-medium">
+          <span className="text-[#D4AF37] font-semibold">Statute:</span> <span className="text-[#BAC1D2]">{statute}</span>
         </div>
       </div>
 
       {/* Byline & Deep Dive CTA */}
       <div className="mt-8 pt-6 border-t border-[#1E2536] flex flex-wrap items-center justify-between gap-4 text-xs text-[#7A8294]">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]/40 flex items-center justify-center font-serif text-[#D4AF37] font-bold text-sm">
+          <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#D4AF37]/30 to-[#C59B27]/10 border border-[#D4AF37]/50 flex items-center justify-center font-serif text-[#D4AF37] font-bold text-sm shadow-sm">
             {analyst.charAt(0)}
           </div>
           <div>
-            <div className="font-bold text-white">{analyst}</div>
-            <div className="text-[12px] text-[#7A8294]">{analystRole}</div>
+            <div className="font-bold text-white text-sm">{analyst}</div>
+            <div className="text-[11px] text-[#8E95A5]">{analystRole}</div>
           </div>
         </div>
         <Link
           href={`/posts/${targetSlug}`}
-          className="text-[#D4AF37] hover:text-[#EAD7BA] font-bold text-xs tracking-wider uppercase transition flex items-center gap-1.5"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-[#141822] hover:bg-[#D4AF37] text-[#D4AF37] hover:text-slate-950 border border-[#D4AF37]/40 hover:border-[#D4AF37] font-bold text-xs tracking-wider uppercase transition-all duration-200 shadow-sm group/btn"
         >
-          Inspect Full Docket Dossier &rarr;
+          <span>Inspect Full Docket Dossier</span>
+          <span className="group-hover/btn:translate-x-1 transition-transform">&rarr;</span>
         </Link>
       </div>
 

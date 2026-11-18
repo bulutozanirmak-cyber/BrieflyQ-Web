@@ -126,7 +126,7 @@ export default function DossierArchiveClient({ posts }: Props) {
       </div>
 
       {/* Posts List */}
-      <div className="bg-[#0F1218] border border-[#1E2536] rounded-lg divide-y divide-[#1E2536] overflow-hidden">
+      <div className="bg-gradient-to-b from-[#131722] via-[#0E121A] to-[#0A0D14] border border-[#232B3E] rounded-xl divide-y divide-[#1E2536] overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.4)]">
         {filteredPosts.length === 0 ? (
           <div className="p-12 text-center text-[#8E95A5]">
             <p className="text-base font-serif font-bold text-white mb-1">No matching judicial dockets found</p>
@@ -136,17 +136,17 @@ export default function DossierArchiveClient({ posts }: Props) {
           filteredPosts.map((post) => (
             <div
               key={post.slug}
-              className="p-5 sm:p-6 hover:bg-[#141822] transition duration-200 flex flex-col md:flex-row md:items-center justify-between gap-4"
+              className="p-5 sm:p-6 hover:bg-[#151A27] transition duration-200 flex flex-col md:flex-row md:items-center justify-between gap-4"
             >
               <div className="max-w-3xl">
-                <div className="flex items-center gap-3 text-xs mb-2">
-                  <span className="px-2 py-0.5 rounded bg-[#D4AF37]/15 text-[#D4AF37] font-bold text-[11px] uppercase tracking-wider">
+                <div className="flex items-center gap-2.5 text-xs mb-2">
+                  <span className="px-2 py-0.5 rounded bg-[#D4AF37]/15 text-[#E5C158] border border-[#D4AF37]/30 font-bold text-[10.5px] uppercase tracking-wider">
                     Dossier Record
                   </span>
                   <span className="text-slate-600">•</span>
-                  <span className="text-[#8E95A5] font-medium">{post.author?.name}</span>
+                  <span className="text-[#BAC1D2] font-medium">{post.author?.name}</span>
                   <span className="text-slate-600">•</span>
-                  <TimeAgo date={post.date} format="long" className="text-[#8E95A5]" />
+                  <TimeAgo date={post.date} format="long" className="text-[#8E95A5] font-mono text-[11px]" />
                 </div>
                 <h3 className="font-serif font-bold text-lg text-white hover:text-[#D4AF37] transition leading-snug">
                   <Link href={`/posts/${post.slug}`}>{post.title}</Link>
@@ -159,7 +159,7 @@ export default function DossierArchiveClient({ posts }: Props) {
               <div className="shrink-0 flex items-center">
                 <Link
                   href={`/posts/${post.slug}`}
-                  className="px-4 py-2 rounded border border-[#2E374D] hover:border-[#D4AF37] hover:text-[#D4AF37] text-white text-xs font-bold uppercase tracking-wider transition whitespace-nowrap"
+                  className="px-4 py-2 rounded-md border border-[#2B354D] hover:border-[#D4AF37] bg-[#10141D] hover:bg-[#D4AF37] text-white hover:text-slate-950 text-xs font-bold uppercase tracking-wider transition-all duration-200 whitespace-nowrap shadow-sm"
                 >
                   Inspect Docket &rarr;
                 </Link>

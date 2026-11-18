@@ -5,18 +5,21 @@ export default function DossierArchive() {
   const posts = getAllPosts();
 
   return (
-    <section id="dossiers" className="border-t border-[#1E2536] pt-10 mb-14">
-      <div className="flex flex-wrap items-baseline justify-between mb-8 gap-4">
+    <section id="dossiers" className="border-t border-[#1E2536] pt-10 sm:pt-12 mb-16">
+      <div className="flex flex-wrap items-end justify-between mb-8 sm:mb-10 gap-4">
         <div>
-          <span className="text-xs font-bold uppercase tracking-widest text-[#D4AF37] block mb-1">
-            Institutional Repository
-          </span>
-          <h2 className="text-3xl font-serif font-bold text-white tracking-tight">
-            Executive Dossiers & Docket Repository
+          <div className="flex items-center gap-2 mb-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
+            <span className="text-[10.5px] font-mono font-bold uppercase tracking-widest text-[#D4AF37]">
+              Institutional Repository // Primary Archive
+            </span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-serif font-bold text-white tracking-tight">
+            Executive Dossiers &amp; Docket Archive
           </h2>
         </div>
         <div className="text-xs text-[#8E95A5] font-medium">
-          Comprehensive Index of Delaware Chancery & Federal Regulatory Filings
+          Comprehensive Index of Delaware Chancery &amp; Federal Regulatory Filings
         </div>
       </div>
 

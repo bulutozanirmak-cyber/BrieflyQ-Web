@@ -8,6 +8,31 @@
   text-rendering: optimizeLegibility;
 }
 
+html {
+  color-scheme: dark;
+}
+
+::selection {
+  background-color: rgba(212, 175, 55, 0.28);
+  color: #faf7f2;
+}
+
+/* Bloomberg / FT Tier Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #080a0e;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2536;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
 @keyframes ticker {
   0% {
     transform: translateX(0);
@@ -33,15 +58,37 @@
   line-height: 0.9;
 }
 
+/* Atmospheric Obsidian Lighting & Glass Panels */
+.obsidian-ambient-mesh {
+  background: 
+    radial-gradient(ellipse 90% 450px at 50% -50px, rgba(212, 175, 55, 0.06), transparent 70%),
+    radial-gradient(ellipse 60% 400px at 15% 20%, rgba(16, 185, 129, 0.025), transparent 60%),
+    radial-gradient(ellipse 50% 500px at 85% 35%, rgba(56, 189, 248, 0.02), transparent 70%);
+}
+
+.obsidian-card-surface {
+  background: linear-gradient(180deg, rgba(20, 24, 34, 0.72) 0%, rgba(13, 16, 23, 0.92) 100%);
+  backdrop-filter: blur(14px);
+}
+
+.hairline-gold-border {
+  border: 1px solid rgba(212, 175, 55, 0.22);
+}
+
+.hairline-gold-border:hover {
+  border-color: rgba(212, 175, 55, 0.45);
+}
+
+/* Executive View Terminal Mode */
 .geo-active .regular-body {
-  opacity: 0.25;
-  filter: blur(0.3px);
-  transition: all 0.3s ease;
+  opacity: 0.22;
+  filter: blur(0.4px);
+  transition: all 0.35s ease;
 }
 
 .geo-active .bluf-memo {
-  border-color: #D4AF37 !important;
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(197, 155, 39, 0.05)) !important;
-  box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.25) !important;
-  transform: scale(1.008);
+  border-color: #d4af37 !important;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(197, 155, 39, 0.06)) !important;
+  box-shadow: 0 12px 36px -4px rgba(212, 175, 55, 0.32), inset 0 0 24px rgba(212, 175, 55, 0.08) !important;
+  transform: scale(1.01);
 }

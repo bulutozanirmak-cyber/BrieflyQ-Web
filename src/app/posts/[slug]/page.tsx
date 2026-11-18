@@ -25,14 +25,15 @@ export default async function Post(props: Params) {
 
   const content = await markdownToHtml(post.content || "");
   const postUrl = `${SITE_URL}/posts/${post.slug}`;
-  const imageUrl = post.ogImage?.url || post.coverImage;
+  const rawImage = post.ogImage?.url || post.coverImage;
+  const fullImageUrl = rawImage?.startsWith("http") ? rawImage : `${SITE_URL}${rawImage}`;
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
     headline: post.title,
     description: post.excerpt,
-    image: [imageUrl],
+    image: [fullImageUrl],
     datePublished: post.date,
     dateModified: post.date,
     mainEntityOfPage: {
@@ -92,7 +93,8 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
 
   const title = `${post.title} | ${SITE_NAME}`;
   const postUrl = `${SITE_URL}/posts/${post.slug}`;
-  const imageUrl = post.ogImage?.url || post.coverImage;
+  const rawImage = post.ogImage?.url || post.coverImage;
+  const fullImageUrl = rawImage?.startsWith("http") ? rawImage : `${SITE_URL}${rawImage}`;
 
   return {
     title,
@@ -109,7 +111,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
       authors: [post.author?.name || SITE_NAME],
       images: [
         {
-          url: imageUrl,
+          url: fullImageUrl,
           alt: post.title,
         },
       ],
@@ -118,7 +120,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
       card: "summary_large_image",
       title,
       description: post.excerpt,
-      images: [imageUrl],
+      images: [fullImageUrl],
     },
   };
 }

@@ -27,17 +27,17 @@ export default function Footer() {
 
         {/* Footer Navigation */}
         <div className="flex flex-wrap items-center gap-6 text-xs text-[#8E95A5] font-medium">
-          <Link href="/#arbitrage-matrix" className="hover:text-[#D4AF37] transition font-bold text-[#D4AF37]">
-            Arbitrage Matrix
-          </Link>
-          <Link href="/#dockets" className="hover:text-[#D4AF37] transition">
-            Chancery Dockets
+          <Link href="/about" className="hover:text-[#D4AF37] transition">
+            About & Masthead
           </Link>
           <Link href="/standards" className="hover:text-[#D4AF37] transition">
             Editorial Standards
           </Link>
           <Link href="/access" className="hover:text-[#D4AF37] transition">
             Institutional Access
+          </Link>
+          <Link href="/terms" className="hover:text-[#D4AF37] transition">
+            Terms of Service
           </Link>
           <Link href="/privacy" className="hover:text-[#D4AF37] transition">
             Privacy Policy

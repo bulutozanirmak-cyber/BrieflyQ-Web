@@ -8,6 +8,8 @@ import Container from "@/app/_components/container";
 import Link from "next/link";
 import { PostBody } from "@/app/_components/post-body";
 import { PostHeader } from "@/app/_components/post-header";
+import PostUtilityBar from "@/app/_components/post-utility-bar";
+import AdSlot from "@/app/_components/ad-slot";
 
 type Params = {
   params: Promise<{
@@ -53,11 +55,40 @@ export default async function Post(props: Params) {
     },
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "BrieflyQ",
+        item: SITE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Dockets & Regulatory Filings",
+        item: `${SITE_URL}/#dossiers`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: postUrl,
+      },
+    ],
+  };
+
   return (
     <main className="py-10">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <Alert preview={post.preview} />
       <Container>
@@ -76,7 +107,14 @@ export default async function Post(props: Params) {
             date={post.date}
             author={post.author}
           />
+          <PostUtilityBar
+            title={post.title}
+            slug={post.slug}
+            date={post.date}
+            authorName={post.author?.name}
+          />
           <PostBody content={content} />
+          <AdSlot slotType="in-article" />
         </article>
       </Container>
     </main>

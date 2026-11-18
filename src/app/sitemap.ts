@@ -12,13 +12,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const staticPages = [
+    { path: "", priority: 1.0, changeFrequency: "daily" as const },
+    { path: "/about", priority: 0.8, changeFrequency: "monthly" as const },
+    { path: "/standards", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/access", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/terms", priority: 0.6, changeFrequency: "monthly" as const },
+    { path: "/privacy", priority: 0.6, changeFrequency: "monthly" as const },
+  ].map((page) => ({
+    url: `${baseUrl}${page.path}`,
+    lastModified: new Date(),
+    changeFrequency: page.changeFrequency,
+    priority: page.priority,
+  }));
+
   return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 1.0,
-    },
+    ...staticPages,
     ...postUrls,
   ];
 }

@@ -1,6 +1,6 @@
 {
   "edition": "New York • London Institutional Edition",
-  "published_at": "November 18, 2026",
+  "published_at": "November 19, 2026",
   "ticker": [
     {
       "label": "S&P 500",
@@ -40,29 +40,14 @@
     }
   ],
   "lead_memo": {
-    "status": "Motion to Dismiss Denied",
+    "status": "Preliminary Injunction Issued",
     "court": "Delaware Court of Chancery",
-    "docket": "Civil Action No. 2025-0814-MTZ",
-    "published_at_iso": "2026-11-18T10:00:00.000Z",
-    "title": "Vice Chancellor Zurn Sustains Challenge to $14.2B Debt-Equity Uptier, Mandating Entire Fairness Review under DGCL § 102(b)(7)",
-    "bluf": "Vice Chancellor Morgan T. Zurn denied motions to dismiss in consolidated litigation challenging a $14.2 billion non-pro-rata uptier exchange. The Court ruled that majority creditor-sponsors executing coercive exit amendments violate DGCL § 102(b)(7) loyalty standards, establishing that private credit liability management remains vulnerable to direct shareholder fiduciary review.",
-    "word_count": 48,
-    "target_asset": "Apex Global Restructuring / Private Credit Syndicate",
-    "prevalent_risk": "$1.9B Deal Spread Risk",
-    "presiding_jurist": "McCormick, Chancellor",
-    "why_it_matters": "Institutional desks holding multi-million spread exposures are recalibrating downside scenarios. The memorandum indicates that pre-scheduled break fees of $420M may become non-enforceable should the Clayton Act Section 7 claim prevail at the scheduled December 4 evidentiary hearing.",
-    "between_the_lines": "Corporate legal officers at major Silicon Valley entities confirmed to BrieflyQ that four private equity syndicates have placed immediate holds on contract execution. The ruling directly impacts transactions involving exclusive sovereign cloud allocations.",
-    "analyst": "Jonathan Vance, J.D.",
-    "role": "Chief Regulatory & Chancery Analyst",
-    "slug": "delaware-chancery-apex",
-    "primary_sources": {
-      "court": "Delaware Court of Chancery (Wilmington, DE)",
-      "docket_number": "C.A. No. 2024-0982-KSJM",
-      "filing_type": "Memorandum Opinion & Order Granting Motion for Preliminary Injunction",
-      "courtlistener_recap": "https://www.courtlistener.com/docket/68902144/apex-cyberlogic/",
-      "sec_accession": "SEC EDGAR Form 8-K Accession #0001193125-26-089211",
-      "governing_statute": "Clayton Antitrust Act 15 U.S.C. § 18; Delaware General Corporation Law 8 Del. C. § 251"
-    }
+    "docket": "Civil Action No. 2025-0941-JTL",
+    "published_at_iso": "2026-11-19T10:00:00.000Z",
+    "title": "Vice Chancellor Laster Voids Restrictive Advance Notice Bylaws, Safeguarding Stockholder Franchise in $18.5B Proxy Contest",
+    "bluf": "Vice Chancellor J. Travis Laster enjoined incumbent directors of Kestrel Systems from enforcing recently amended advance notice bylaws against an institutional activist slate. The Court held that imposing subjective questionnaire requirements and ten-day compliance windows during an active contest violates the fundamental stockholder franchise under DGCL § 211 and Blasius review.",
+    "word_count": 51,
+    "target_asset": "Kestrel Systems Group (NYSE: KSG)"
   },
   "regulatory_radar": [
     {

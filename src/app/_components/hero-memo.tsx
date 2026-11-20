@@ -9,19 +9,19 @@ type Props = {
 };
 
 export default function HeroMemo({ post, slug }: Props) {
-  const memoFallback = dossier.lead_memo;
+  const memoFallback = dossier.lead_memo as any;
 
-  const targetSlug = post?.slug || slug || memoFallback.slug || "delaware-chancery-apex";
-  const title = post?.title || memoFallback.title;
-  const date = post?.date || memoFallback.published_at_iso;
-  const analyst = post?.author?.name || memoFallback.analyst;
+  const targetSlug = post?.slug || slug || memoFallback?.slug || "delaware-chancery-apex";
+  const title = post?.title || memoFallback?.title;
+  const date = post?.date || memoFallback?.published_at_iso;
+  const analyst = post?.author?.name || memoFallback?.analyst || "Jonathan Vance, J.D.";
   const analystRole = "Senior Chancery & Regulatory Analyst";
 
-  let bluf = post?.excerpt || memoFallback.bluf;
-  let court = memoFallback.court;
-  let docket = memoFallback.docket;
-  let statute = memoFallback.primary_sources?.governing_statute || "Delaware General Corporation Law § 251";
-  let jurist = memoFallback.presiding_jurist;
+  let bluf = post?.excerpt || memoFallback?.bluf;
+  let court = memoFallback?.court || "Delaware Court of Chancery";
+  let docket = memoFallback?.docket || "Civil Action No. 2025-0814-MTZ";
+  let statute = memoFallback?.primary_sources?.governing_statute || "Delaware General Corporation Law § 251";
+  let jurist = memoFallback?.presiding_jurist || "Delaware Chancery En Banc";
   let status = "ACTIONABLE RULING";
   let whyItMatters = memoFallback.why_it_matters;
   let betweenTheLines = memoFallback.between_the_lines;

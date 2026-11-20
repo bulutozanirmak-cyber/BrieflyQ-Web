@@ -331,9 +331,11 @@ ogImage:
 
         # Update lead memo in dossier.json
         dossier["lead_memo"] = {
+            "slug": post_slug,
             "status": selected_topic["lead_status"],
             "court": selected_topic["court"],
             "docket": selected_topic["docket"],
+            "analyst": selected_topic["author_name"],
             "published_at_iso": f"{today_iso}T10:00:00.000Z",
             "title": selected_topic["title"],
             "bluf": selected_topic["bluf"],

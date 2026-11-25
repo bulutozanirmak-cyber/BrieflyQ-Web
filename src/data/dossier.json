@@ -1,6 +1,6 @@
 {
   "edition": "New York • London Institutional Edition",
-  "published_at": "November 24, 2026",
+  "published_at": "November 25, 2026",
   "ticker": [
     {
       "label": "S&P 500",
@@ -40,16 +40,16 @@
     }
   ],
   "lead_memo": {
-    "slug": "delaware-chancery-uptier-restructuring-dgcl",
-    "status": "Motion to Dismiss Denied",
+    "slug": "chancery-invalidates-advance-notice-bylaws-activist-proxy",
+    "status": "Preliminary Injunction Issued",
     "court": "Delaware Court of Chancery",
-    "docket": "Civil Action No. 2025-0814-MTZ",
-    "analyst": "Elena Rostova, LL.M.",
-    "published_at_iso": "2026-11-24T10:00:00.000Z",
-    "title": "Delaware Court of Chancery Sustains Minority Shareholder Challenge to $14.2B Debt-Equity Uptier, Invalidating Coercive Exit Amendments under DGCL § 102(b)(7)",
-    "bluf": "Vice Chancellor Morgan T. Zurn denied motions to dismiss in consolidated litigation challenging a $14.2 billion non-pro-rata uptier exchange. The Court ruled that majority creditor-sponsors executing coercive exit amendments violate DGCL § 102(b)(7) loyalty standards, establishing that private credit liability management remains vulnerable to direct shareholder fiduciary review.",
-    "word_count": 48,
-    "target_asset": "Apex Global Restructuring / Private Credit Syndicate"
+    "docket": "Civil Action No. 2025-0941-JTL",
+    "analyst": "Jonathan Vance, J.D.",
+    "published_at_iso": "2026-11-25T10:00:00.000Z",
+    "title": "Vice Chancellor Laster Voids Restrictive Advance Notice Bylaws, Safeguarding Stockholder Franchise in $18.5B Proxy Contest",
+    "bluf": "Vice Chancellor J. Travis Laster enjoined incumbent directors of Kestrel Systems from enforcing recently amended advance notice bylaws against an institutional activist slate. The Court held that imposing subjective questionnaire requirements and ten-day compliance windows during an active contest violates the fundamental stockholder franchise under DGCL § 211 and Blasius review.",
+    "word_count": 51,
+    "target_asset": "Kestrel Systems Group (NYSE: KSG)"
   },
   "regulatory_radar": [
     {

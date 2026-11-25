@@ -2,7 +2,7 @@
 title: "Vice Chancellor Laster Voids Restrictive Advance Notice Bylaws, Safeguarding Stockholder Franchise in $18.5B Proxy Contest"
 excerpt: "The Delaware Court of Chancery enjoined aggressive advance notice bylaws enacted by an incumbent target board, holding that post-announcement nomination barriers fail enhanced scrutiny under Blasius and Unocal doctrines."
 coverImage: "/assets/blog/chancery-invalidates-advance-notice-bylaws-activist-proxy/cover.jpg"
-date: "2026-11-19T10:00:00.000Z"
+date: "2026-11-25T10:00:00.000Z"
 author:
   name: "Jonathan Vance, J.D."
   picture: "/assets/blog/authors/jj.jpeg"

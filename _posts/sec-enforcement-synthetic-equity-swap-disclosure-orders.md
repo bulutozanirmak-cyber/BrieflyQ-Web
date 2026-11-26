@@ -2,7 +2,7 @@
 title: "SEC Enforces Sweeping Beneficial Ownership Disclosure Rules on Cash-Settled Total Return Swaps under SEA § 13(d)"
 excerpt: "The SEC issued settled cease-and-desist orders against top-tier long/short hedge funds, mandating immediate Schedule 13D disclosures for synthetic swaps conferring de facto voting control."
 coverImage: "/assets/blog/sec-enforcement-synthetic-equity-swap-disclosure-orders/cover.jpg"
-date: "2026-11-22T10:00:00.000Z"
+date: "2026-11-26T10:00:00.000Z"
 author:
   name: "Marcus Sterling"
   picture: "/assets/blog/authors/tim.jpeg"

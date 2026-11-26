@@ -1,6 +1,6 @@
 {
   "edition": "New York • London Institutional Edition",
-  "published_at": "November 25, 2026",
+  "published_at": "November 26, 2026",
   "ticker": [
     {
       "label": "S&P 500",
@@ -40,16 +40,16 @@
     }
   ],
   "lead_memo": {
-    "slug": "chancery-invalidates-advance-notice-bylaws-activist-proxy",
-    "status": "Preliminary Injunction Issued",
-    "court": "Delaware Court of Chancery",
-    "docket": "Civil Action No. 2025-0941-JTL",
-    "analyst": "Jonathan Vance, J.D.",
-    "published_at_iso": "2026-11-25T10:00:00.000Z",
-    "title": "Vice Chancellor Laster Voids Restrictive Advance Notice Bylaws, Safeguarding Stockholder Franchise in $18.5B Proxy Contest",
-    "bluf": "Vice Chancellor J. Travis Laster enjoined incumbent directors of Kestrel Systems from enforcing recently amended advance notice bylaws against an institutional activist slate. The Court held that imposing subjective questionnaire requirements and ten-day compliance windows during an active contest violates the fundamental stockholder franchise under DGCL § 211 and Blasius review.",
+    "slug": "sec-enforcement-synthetic-equity-swap-disclosure-orders",
+    "status": "Cease-and-Desist Enacted",
+    "court": "Securities and Exchange Commission",
+    "docket": "Admin. Proc. File No. 3-21980",
+    "analyst": "Marcus Sterling",
+    "published_at_iso": "2026-11-26T10:00:00.000Z",
+    "title": "SEC Enforces Sweeping Beneficial Ownership Disclosure Rules on Cash-Settled Total Return Swaps under SEA § 13(d)",
+    "bluf": "The Securities and Exchange Commission issued landmark enforcement orders requiring rapid Schedule 13D and 13G disclosures for cash-settled equity swaps. The Commission established that derivative contracts coupled with prime broker rehypothecation rights constitute beneficial ownership under Section 13(d) of the Securities Exchange Act, eliminating private accumulation tactics ahead of M&A bids.",
     "word_count": 51,
-    "target_asset": "Kestrel Systems Group (NYSE: KSG)"
+    "target_asset": "Global Synthetic Equity Derivatives & Prime Broker Desks"
   },
   "regulatory_radar": [
     {

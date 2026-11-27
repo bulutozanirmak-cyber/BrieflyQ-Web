@@ -2,7 +2,7 @@
 title: "DOJ Antitrust Division Secures Federal Injunction Blocking $21B Cross-Market Healthcare Consolidation under Clayton Act § 7"
 excerpt: "A federal district court granted the Department of Justice's injunction against a $21B healthcare mega-merger, validating cross-market bundling leverage as an independent antitrust injury."
 coverImage: "/assets/blog/doj-antitrust-cross-market-hospital-merger-injunction/cover.jpg"
-date: "2026-11-23T10:00:00.000Z"
+date: "2026-11-27T10:00:00.000Z"
 author:
   name: "Elena Rostova, LL.M."
   picture: "/assets/blog/authors/joe.jpeg"

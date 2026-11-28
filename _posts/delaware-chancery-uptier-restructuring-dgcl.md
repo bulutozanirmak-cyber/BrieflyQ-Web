@@ -2,7 +2,7 @@
 title: "Delaware Court of Chancery Sustains Minority Shareholder Challenge to $14.2B Debt-Equity Uptier, Invalidating Coercive Exit Amendments under DGCL § 102(b)(7)"
 excerpt: "Vice Chancellor Zurn denied defendants' motion to dismiss, holding that non-pro-rata liability management transactions executed via majority creditor written consent remain subject to entire fairness review under Delaware corporate fiduciary doctrine."
 coverImage: "/assets/blog/delaware-chancery-uptier-restructuring-dgcl/cover.jpg"
-date: "2026-11-24T10:00:00.000Z"
+date: "2026-11-28T10:00:00.000Z"
 author:
   name: "Elena Rostova, LL.M."
   picture: "/assets/blog/authors/joe.jpeg"

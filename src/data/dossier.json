@@ -1,6 +1,6 @@
 {
   "edition": "New York • London Institutional Edition",
-  "published_at": "November 27, 2026",
+  "published_at": "November 28, 2026",
   "ticker": [
     {
       "label": "S&P 500",
@@ -40,16 +40,16 @@
     }
   ],
   "lead_memo": {
-    "slug": "doj-antitrust-cross-market-hospital-merger-injunction",
-    "status": "Injunction Granted",
-    "court": "U.S. District Court (S.D.N.Y.)",
-    "docket": "Civil Action No. 1:25-cv-04820-KPF",
+    "slug": "delaware-chancery-uptier-restructuring-dgcl",
+    "status": "Motion to Dismiss Denied",
+    "court": "Delaware Court of Chancery",
+    "docket": "Civil Action No. 2025-0814-MTZ",
     "analyst": "Elena Rostova, LL.M.",
-    "published_at_iso": "2026-11-27T10:00:00.000Z",
-    "title": "DOJ Antitrust Division Secures Federal Injunction Blocking $21B Cross-Market Healthcare Consolidation under Clayton Act § 7",
-    "bluf": "The U.S. District Court for the Southern District of New York blocked the proposed $21 billion merger between OmniHealth Partners and Beacon Health System. Judge Katherine Polk Failla held that cross-market hospital combinations enabling all-or-nothing insurer contracting violate Section 7 of the Clayton Act, halting deal integration procedures.",
+    "published_at_iso": "2026-11-28T10:00:00.000Z",
+    "title": "Delaware Court of Chancery Sustains Minority Shareholder Challenge to $14.2B Debt-Equity Uptier, Invalidating Coercive Exit Amendments under DGCL § 102(b)(7)",
+    "bluf": "Vice Chancellor Morgan T. Zurn denied motions to dismiss in consolidated litigation challenging a $14.2 billion non-pro-rata uptier exchange. The Court ruled that majority creditor-sponsors executing coercive exit amendments violate DGCL § 102(b)(7) loyalty standards, establishing that private credit liability management remains vulnerable to direct shareholder fiduciary review.",
     "word_count": 48,
-    "target_asset": "OmniHealth Partners / Beacon Health System ($21B Merger)"
+    "target_asset": "Apex Global Restructuring / Private Credit Syndicate"
   },
   "regulatory_radar": [
     {
